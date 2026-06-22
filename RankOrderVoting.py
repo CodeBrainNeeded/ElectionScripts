@@ -27,7 +27,6 @@ def flexibleContains(contain1: str, contain2: str):
 def simplifyString(string: str):
     return string.lower().strip()
 
-
 def getAndCheckStringInput(toCheck: list[str]):
     """
     gets input from user and checks if it is valid; repeatedly asks for input until valid input is given; returns input when it is valid
@@ -74,7 +73,7 @@ class Position:
         self.indexInCSV: int = -1 # default index
         self.candidates: list[Candidate] = [] # list of Candidates
         self.winningCandidates: list[Candidate] = [] # list of Candidates that won the position
-        self.originalVotes: list[list] = []
+        self.originalVotes: list = []
         self.mutableVotes: list[list] = []
         self.disallowedVotes: list[str] = []
     
@@ -127,13 +126,13 @@ def intro():
     print(INTRODUCTION)
 
 FILE_ENTRY_INSTRUCTIONS = "Input the address of the CSV file with the election data. Do not include any additional text or spaces."
-def getCSV() -> list[list[str]]:
+def getCSV() -> list[list]]:
     """
     asks the user for the address of the CSV file with the voting data; if they do not input a valid address, it will repeatedly ask for input until a valid address is given; returns 2D array of the data in the CSV file when a valid address is given
     """
 
     print(FILE_ENTRY_INSTRUCTIONS)
-    stringInput = getAndCheckStringInput(".csv") # checks if the input is a string and contains ".csv"
+    stringInput = getAndCheckStringInput([".csv"]) # checks if the input is a string and contains ".csv"
 
     csvFile = []
 
@@ -160,7 +159,7 @@ def getPositions():
     """
 
     print(GIVE_POSITIONS_SPIEL)
-    positionInput = getAndCheckStringInput(",")
+    positionInput = getAndCheckStringInput([","])
 
     positions = [] # an array of the positions being voted on, as Position objects
     
@@ -168,7 +167,9 @@ def getPositions():
 
     for positionData in splitInput:
         if positionData:  # Check if the string is not empty
-            name, numWinners = positionData.split(",")
+            singlePosition: list = positionData.split(",")
+            name: str = singlePosition[0]
+            numWinners: int = int(singlePosition[1])
             positions.append(Position(name, numWinners)) # has to input both as strings, since the Position constructor converts numWinners to an integer itself; also, the Position constructor strips whitespace from the name, so no need to do that here
     
     print()
@@ -197,20 +198,20 @@ def setUpForVoting(csv: list[list[str]], positions: list[Position]):
             
             i += 1 
 
-        if(i >= len(csv[0])): positionIndexesToPop.append[positions.index[position]]
+        if(i >= len(csv[0])): positionIndexesToPop.append(positions.index(position))
 
     for indexNumber in positionIndexesToPop: # removes any indexes it couldn't find
         print("Could not find " + positions[indexNumber].name)
-        positions.pop[indexNumber]
+        positions.pop(indexNumber)
 
     csv.pop(0) # removes the header row to simplify voting calculations (so that for loops can be used instead of while loops)
 
     for position in positions:
         # converts the large strings containing the rankings from each voter into arrays containing each candidate in order
         for row in csv:
-            row[position.indexInCSV] = row[position.indexInCSV].split(";")
+            row[position.indexInCSV] = row[position.indexInCSV].split(";") # type: ignore
 
-            try: row[position.indexInCSV].remove("")
+            try: row[position.indexInCSV].remove("") # type: ignore
             except ValueError: print("bro?!?") # this is just a filler, it will probably never happen, but I just need something in the except
 
             position.originalVotes.append(row[position.indexInCSV])
@@ -310,7 +311,7 @@ def checkMultiPositionWinners(csv: list[list], positions: list[Position]):
 
     isMultiPositionWinner: bool = False
     winnerOfMultiplePositions: Candidate = Candidate("")
-    positionsWereWon: tuple[Position, Position] = ()
+    positionsWereWon: tuple[Position, Position] = (Position("placeholder1", 1), Position("placeholder2", 2))
 
     # I believe this is O(n^4)
     for position in positions:
