@@ -258,8 +258,6 @@ def runVoting(csv: list[list], positions: list[Position]):
     for position in positions:
         positionElection(csv, position)
 
-    printWinners(positions)
-
 def positionElection(csv: list[list], position: Position) -> list[Candidate]:
     """ 
     recurses to find the winner(s) for the position
