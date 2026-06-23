@@ -1,4 +1,4 @@
-###### **Instant-Runoff Voting**
+# **Instant-Runoff Voting**
 
 This script was created with the intent of simplifying the conduction of a Instant-Runoff election through a platform like Microsoft Forms.
 
