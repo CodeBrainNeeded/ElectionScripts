@@ -1,26 +1,25 @@
-# **Instant-Runoff Voting**
+# **Ranked-Choice Election Scripts**
 
-This script was created with the intent of simplifying the conduction of a Instant-Runoff election through a platform like Microsoft Forms.
+This workspace now contains a modular election toolkit that can process ranked ballot data from a Microsoft Forms CSV using either Instant Runoff Voting (IRV) or a sequential Condorcet method.
 
+## How to use it
 
+* Create a Microsoft Form with ranking questions and export the results as a CSV.
+* Install Python if you have not already done so.
+* Run the main entrypoint:
+  * python Election.py
+* Follow the prompts to enter the CSV path, the positions and winner counts, and whether to use IRV or Condorcet.
 
-**Here's how to use it:**
+## Files
 
-* Make a Microsoft Form for your election with "Ranking" questions and collect response, export the results as an Excel File. Then, convert or "Save As" the file as a CSV.
-* Install Python if you haven't already. The steps to do so are here: https://www.python.org/downloads/
-* Download the script
-* Run the python file: open Command Line and type in "python" followed by a space and then the address of the script file
+* Election.py: CLI entrypoint and CSV/position setup logic.
+* Position.py: ballot and candidate data for a single office.
+* Candidate.py: storage for candidate-specific vote totals and tie-breaker values.
+* InstantRunoffVoting.py: IRV election engine.
+* CondorcetVoting.py: Condorcet election engine.
+* tests/test_election.py: regression tests for the new voting engines.
 
-  * for example: "python C:\\Users\\CodeBrainNeeded\\Desktop\\RankChoiceVoting.py"
-* Follow the instructions and answer the prompts as given by the script
+## Election theory
 
-
-
-You can trust that the script is not malware because I don't know enough about malware to explain to you why the script is not malware. You can also just read the code. There is no method in it called "hijackDevice()".
-
-
-
-**Election Theory:**
-
-The script uses an Instant Runoff Voting (IRV) system, which is unquestionably fairer than the "first-past-the-post" system that most organizations and governments use in the USA (many other countries use IRV). IRV is theoretically not as fair as the Condorcet method (this is a great article on why: https://effectivegov.uchicago.edu/primers/condorcet-voting), but the shortcomings of IRV compared to Condorcet usually only arise in elections that are highly partisan/polarized and/or involve a very small number of competitive candidates, so IRV is generally sufficient for elections in non-governmental organizations.
+IRV is a transferable-vote system that eliminates the weakest candidate until a winner remains. Condorcet compares candidates head-to-head and elects a candidate who beats every other candidate in pairwise majority contests when one exists.
 
