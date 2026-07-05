@@ -1,6 +1,8 @@
 from __future__ import annotations
 
 import itertools
+import random
+from copy import deepcopy
 from typing import List, Optional
 
 from Candidate import Candidate
@@ -14,19 +16,27 @@ class CondorcetVoting(InstantRunoffVoting):
 
     def recurseCalculate(self, position: Position) -> List[Candidate]:
         """Select a winner from pairwise contests until the target number of winners remains."""
-        if len(position.winners) <= position.numPossibleWinners:
-            return position.winners
+        if position.numPossibleWinners <= 0:
+            return []
+
+        if len(position.candidates) <= position.numPossibleWinners:
+            return list(position.candidates)
 
         winner = self._selectCondorcetWinner(position)
         if winner is None:
-            return position.winners
+            return list(position.candidates[: position.numPossibleWinners])
 
         if position.numPossibleWinners == 1:
             position.winners = [winner]
             return position.winners
 
-        next_position = position.copyAndRemoveCandidate(winner)
-        return self.recurseCalculate(next_position)
+        next_position = self._copyAndRemoveCandidateWithoutScoreRecompute(position, winner)
+        next_position.numPossibleWinners = position.numPossibleWinners - 1
+
+        remaining_winners = self.recurseCalculate(next_position)
+        selected_winners = [winner]
+        selected_winners.extend(remaining_winners)
+        return selected_winners
 
     def _selectCondorcetWinner(self, position: Position) -> Optional[Candidate]:
         """Find a pairwise majority winner, or fall back to the strongest ranked-pairs outcome."""
@@ -41,6 +51,26 @@ class CondorcetVoting(InstantRunoffVoting):
                 return candidate
 
         return self._rankedPairsWinner(position.candidates, pairwise_scores)
+
+    def _copyAndRemoveCandidateWithoutScoreRecompute(self, position: Position, candidate: Candidate) -> Position:
+        """Copy a position and remove one candidate while preserving existing Borda and first-vote values."""
+        copied_position = deepcopy(position)
+        candidate_key = simplifyString(candidate.name)
+        copied_position.votes = [
+            [name for name in vote if simplifyString(str(name)) != candidate_key]
+            for vote in copied_position.votes
+        ]
+        copied_position.candidates = [
+            active_candidate
+            for active_candidate in copied_position.candidates
+            if simplifyString(active_candidate.name) != candidate_key
+        ]
+        copied_position.winners = [
+            active_candidate
+            for active_candidate in copied_position.winners
+            if simplifyString(active_candidate.name) != candidate_key
+        ]
+        return copied_position
 
     def _buildPairwiseScores(self, position: Position) -> dict[str, dict[str, int]]:
         """Construct a pairwise comparison matrix for the active candidates."""
@@ -80,55 +110,85 @@ class CondorcetVoting(InstantRunoffVoting):
         for opponent in candidates:
             if candidate.name == opponent.name:
                 continue
-            if scores[candidate.name][opponent.name] <= scores[opponent.name][candidate.name]:
+            if self._compareHeadToHead(candidate, opponent, scores) <= 0:
                 return False
         return True
 
+    def _compareHeadToHead(
+        self,
+        left: Candidate,
+        right: Candidate,
+        scores: dict[str, dict[str, int]],
+    ) -> int:
+        """Compare two candidates head-to-head with Planning.md tie-breakers."""
+        left_votes = scores[left.name][right.name]
+        right_votes = scores[right.name][left.name]
+        if left_votes != right_votes:
+            return left_votes - right_votes
+
+        if left.borda != right.borda:
+            return left.borda - right.borda
+
+        if left.firstVotes != right.firstVotes:
+            return left.firstVotes - right.firstVotes
+
+        return 1 if random.random() < 0.5 else -1
+
     def _rankedPairsWinner(self, candidates: List[Candidate], scores: dict[str, dict[str, int]]) -> Optional[Candidate]:
         """Fall back to an approximate ranked-pairs winner when no Condorcet winner exists."""
-        pairwise_edges: List[tuple[int, Candidate, Candidate]] = []
+        pairwise_edges: List[tuple[int, int, int, str, str, Candidate, Candidate]] = []
         for left, right in itertools.combinations(candidates, 2):
-            margin = scores[left.name][right.name] - scores[right.name][left.name]
-            pairwise_edges.append((margin, left, right))
-
-        pairwise_edges.sort(key=lambda item: abs(item[0]), reverse=True)
-        locked_edges: List[tuple[Candidate, Candidate]] = []
-        for _, left, right in pairwise_edges:
-            if not self._createsCycle(locked_edges, left, right):
-                locked_edges.append((left, right))
-
-        wins: dict[str, int] = {candidate.name: 0 for candidate in candidates}
-        for left, right in locked_edges:
-            if scores[left.name][right.name] > scores[right.name][left.name]:
-                wins[left.name] += 1
+            comparison = self._compareHeadToHead(left, right, scores)
+            if comparison > 0:
+                winner = left
+                loser = right
             else:
-                wins[right.name] += 1
+                winner = right
+                loser = left
 
-        if not wins:
+            margin = abs(scores[left.name][right.name] - scores[right.name][left.name])
+            borda_delta = winner.borda - loser.borda
+            first_vote_delta = winner.firstVotes - loser.firstVotes
+            pairwise_edges.append(
+                (
+                    margin,
+                    borda_delta,
+                    first_vote_delta,
+                    simplifyString(winner.name),
+                    simplifyString(loser.name),
+                    winner,
+                    loser,
+                )
+            )
+
+        pairwise_edges.sort(key=lambda item: (item[0], item[1], item[2], item[3], item[4]), reverse=True)
+
+        locked_graph: dict[str, set[str]] = {candidate.name: set() for candidate in candidates}
+        for _, _, _, _, _, winner, loser in pairwise_edges:
+            if not self._createsCycle(locked_graph, winner.name, loser.name):
+                locked_graph[winner.name].add(loser.name)
+
+        if not locked_graph:
             return candidates[0]
-        best_name = max(wins.items(), key=lambda item: (item[1], item[0]))[0]
+
+        incoming_counts: dict[str, int] = {candidate.name: 0 for candidate in candidates}
+        for winners_over in locked_graph.values():
+            for loser_name in winners_over:
+                incoming_counts[loser_name] += 1
+
+        best_name = min(incoming_counts.items(), key=lambda item: (item[1], simplifyString(item[0])))[0]
         return next(candidate for candidate in candidates if candidate.name == best_name)
 
-    def _createsCycle(self, edges: List[tuple[Candidate, Candidate]], left: Candidate, right: Candidate) -> bool:
-        """Check whether adding an edge would create a cycle in the locked set."""
-        if (left, right) in edges or (right, left) in edges:
-            return True
-
-        graph: dict[str, set[str]] = {left.name: set(), right.name: set()}
-        for start, end in edges:
-            graph[start.name].add(end.name)
-            graph[end.name].add(start.name)
-        graph[left.name].add(right.name)
-        graph[right.name].add(left.name)
-
+    def _createsCycle(self, graph: dict[str, set[str]], winner: str, loser: str) -> bool:
+        """Check whether locking winner -> loser would create a directed cycle."""
         visited: set[str] = set()
-        stack: List[str] = [left.name]
+        stack: List[str] = [loser]
         while stack:
             current = stack.pop()
-            if current == right.name:
+            if current == winner:
                 return True
             if current in visited:
                 continue
             visited.add(current)
-            stack.extend(graph[current])
+            stack.extend(graph.get(current, set()))
         return False

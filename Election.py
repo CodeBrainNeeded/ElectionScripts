@@ -17,7 +17,11 @@ def flexibleContains(contain1: str, contain2: str) -> bool:
 
     short_contain = contain2 if len(contain1) > len(contain2) else contain1
     long_contain = contain1 if len(contain1) > len(contain2) else contain2
-    return simplifyString(short_contain) in simplifyString(long_contain) and short_contain.strip() and long_contain.strip()
+    return bool(
+        short_contain.strip()
+        and long_contain.strip()
+        and simplifyString(short_contain) in simplifyString(long_contain)
+    )
 
 
 def simplifyString(value: str) -> str:
@@ -85,7 +89,7 @@ def setUpForVoting(csv_data: List[List[str]], positions: List[Position]) -> None
     for position in positions:
         position.indexInCSV = -1
         for index, column_name in enumerate(header):
-            if flexibleContains(column_name, position.name):
+            if simplifyString(column_name) == simplifyString(position.name):
                 position.indexInCSV = index
                 break
 

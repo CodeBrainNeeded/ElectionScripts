@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-import random
 from typing import List, Optional
 
 from Candidate import Candidate
@@ -29,13 +28,13 @@ class InstantRunoffVoting:
         """Run the election and resolve any conflicts for multiple wins."""
         active_positions = positions or self.positions
         for position in active_positions:
-            self.recurseCalculate(position)
+            position.winners = self.recurseCalculate(position)
         self.checkForMultiple(active_positions)
 
     def recurseCalculate(self, position: Position) -> List[Candidate]:
         """Eliminate the weakest candidate until the target number of winners remains."""
-        if len(position.winners) <= position.numPossibleWinners:
-            return position.winners
+        if len(position.candidates) <= position.numPossibleWinners:
+            return list(position.candidates)
 
         position.calculateFirstVotes()
         candidateToRemove = self._selectCandidateToRemove(position)
@@ -60,7 +59,7 @@ class InstantRunoffVoting:
                 elif candidate.borda == candidateToRemove.borda:
                     if candidate.firstVotes < candidateToRemove.firstVotes:
                         candidateToRemove = candidate
-                    elif candidate.firstVotes == candidateToRemove.firstVotes and random.random() < 0.5:
+                    elif candidate.firstVotes == candidateToRemove.firstVotes and simplifyString(candidate.name) < simplifyString(candidateToRemove.name):
                         candidateToRemove = candidate
         return candidateToRemove
 
@@ -92,7 +91,13 @@ class InstantRunoffVoting:
             target_position_copy = target_position.copyAndRemoveCandidate(
                 next(candidate for candidate in target_position.winners if simplifyString(candidate.name) == winner_key)
             )
-            self.recurseCalculate(target_position_copy)
+            resolved_winners = self.recurseCalculate(target_position_copy)
+
+            target_position.votes = target_position_copy.votes
+            target_position.candidates = target_position_copy.candidates
+            target_position.originalVotes = target_position_copy.originalVotes
+            target_position.winners = resolved_winners
+
             return self.checkForMultiple(positions)
 
         return None

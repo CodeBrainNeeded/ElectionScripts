@@ -156,6 +156,7 @@ The classes may or may not need to have the following functionality / methods / 
 **Functionality:**
 
 * calculate results for a list of Positions using Sequential Condorcet with Ranked Pairs (aka Tideman) logic
+* in the case of a tie in a head-to-head comparison, use Borda count as the first tie-breaker, number of first-choice votes received as the second tie-breaker, and random chance as the third tie-breaker
 * the user experience should be the same as with InstantRunoffVoting and it should be able to be used as interchangeably as possible in code with InstantRunoffVoting (with the minimum of change in the experience of doing external method calls, etc.)
 
 **Methods:** whatever is necessary to meet the functionality criteria
