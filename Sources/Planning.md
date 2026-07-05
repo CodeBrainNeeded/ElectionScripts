@@ -156,7 +156,7 @@ The classes may or may not need to have the following functionality / methods / 
 **Functionality:**
 
 * calculate results for a list of Positions using Sequential Condorcet with Ranked Pairs (aka Tideman) logic
-* the user experience should be the same as with InstantRunoffVoting and they should be able to be used as interchangeably as possible in code (with the minimum of change in the experience of doing external method calls, etc.)
+* the user experience should be the same as with InstantRunoffVoting and it should be able to be used as interchangeably as possible in code with InstantRunoffVoting (with the minimum of change in the experience of doing external method calls, etc.)
 
 **Methods:** whatever is necessary to meet the functionality criteria
 
@@ -167,6 +167,7 @@ The classes may or may not need to have the following functionality / methods / 
 ##### Other Key Details:
 
 * Use the *OriginalScript.py* file as a reference as much as possible (because we know it works as an Instant Runoff Voting calculator).
+* Do not edit *OriginalScript.py* or have it be a dependency for the new files
 * Write informative but concise Docstrings for all methods and instance variables
 * Use camelCase for variable and method names and PascalCase for class names
 * Use type hints for variables and objects whenever possible
