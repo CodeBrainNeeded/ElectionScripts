@@ -1,0 +1,466 @@
+WIKIPEDIA
+25 years of the free encyclopedia
+Instant-runoff voting
+
+Instant-runoff voting (IRV; !l§,: ranked-choice voting (RCV), Mr= preferential voting,
+ / : alternative vote) is a single-winner ranked voting election system where one or more eliminations are used to simulate multiple rounds of voting as done in a runoff election. The purpose is to have the winner win with the support of a proven majority of votes cast (or majority of votes still in play at the time of winning).
+If no candidate takes a majority of votes in the first round, in each subsequent round the candidate with the fewest first-preference votes among the remaining candidates is eliminated and their votes are transferred if possible. This continues until a candidate achieves a majority of votes. If the field of candidates is thinned to only two remaining, one or the other is certain to have a majority, barring a tie.
+
+Instant-runoff voting is a majoritarian system.C1JIt has similarities to the two-round system,C2Jparty primary[, 3Jand single transferable voting.	--
+IRV has found some use in national elections in several countries, mostly in the former British Empire. It is used to elect members of the Australian House of Representatives and the National Parliament of Papua New Guinea, and to elect the head of state in India, Ireland, and Sri Lanka. Advocates of instant-runoff voting point to its ability to elect a candidate preferred by the majority of voters (as opposed to first-past-the-post voting (FPTP), where a candidate can be elected by receiving fewer than half the votes).
+IRV was discussed by the Marquis de Condorcet, who said it had the disadvantage that it could eliminate the majority-preferred candidate in one-on-one comparisons (Condorcet winner)_[4J[s][6J[7J Since then, instant-runoff voting has been criticized for other mathematical pathologies, including its
+
+ability to eliminate candidates for having too much support or too many votes.CS] Like FPTP, instant­ runoff voting is vulnerable to a kind of spoiler effect called a center squeeze,[9][io] which causes it to favor uncomprom1smg alternatives over more moderate ones,[nJ[12J[13J[14J encouragmg polarization.[l5]
+
+Advocates of IRV argue these properties are positive, as election systems should encourage candidates to appeal to their core support or political base, rather than to a broad spectrum.[161They also note that in the United Kingdom, where primaries or runoffs are not used, instant-runoff voting can prevent spoiler effects caused by minor-party candidates and by vote-splitting caused by nearly identical (clone) candidates. IRV has also been described as a natural extension of the two-round system or primaries that avoids voters having to vote in multiple rounds ofvoting.C17J
+Generally in IRV contests, each party runs just one candidate with transfers by definition then occurring across party lines. But in some instances, a party runs two candidate in single-winner contests, trusting in vote transfers to prevent the multiple candidates from hurting the party's
+
+chances. The Country Party in Australia was for years prone to running two candidates in single­ winner IRV contests. The Riverina district in 1943 saw an instance of this double candidacy)18J
+
+
+
+
+Election procedure
+
+In instant-runoff voting, as with other ranked voting methods, each voter orders candidates from first to last. The counting procedure is then as follows:
+1. If there is more than one candidate left, eliminate the one with the fewest voters ranking them first.a
+2. Reassign votes held by the eliminated candidates to the next­ highest preference on each ballot paper (setting aside any with no remaining preferences). Return to step 1.
+This procedure is often described as stopping when a candidate reaches a majority, but there is no guarantee that any candidate will reach more than half the votes. (In practice, most candidates who do not have a majority in the first round do not achieve a majority under IRV.[19J[2oJ
+
+
+Properties and pathologies
+
+
+Center squeeze
+A center squeeze is a kind of spoiler effect shared by rules like the two-round system, plurality-with­ primaries, and ranked choice voting[. 21J In a center squeeze, the majority-preferred and socially optimal candidate is eliminated in favor of a more extreme alternative in an early round, while there are still spoilers.[22J[23J Systems with center squeeze are sometimes called centrifugal ("center­ fleeing") because they encourage political polarization.[24J
+
+
+Candidates focused on appealing to a smaller base of core supporters can "squeeze" broadly popular candidates trapped between them out of the race, by splitting the first-preference votes needed to survive earlier rounds.[21J[2sJ[26JThis effect was first predicted by social choice theorists in the 1940s and 50s, and has since been documented in various countries using plurality-style electoral systems.
+
+Famous examples of center squeezes include Alaska's 2022 special election (where Nick Begich III was eliminated in the first round by Sarah Palini27J as well as the 2007 French presidential election, where moderate liberal Franc;ois Bayrou was eliminated by left-wing Segolene Royal, allowing the right-wing Nicolas Sarkozy to win the second round.[2BJ[29J
+
+
+Wasted votes and Condorcet winners
+Compared to a plurality voting system that rewards only the top vote-getter using non­
+transferable votes, instant-runoff voting mitigates the problem of wasted votes.[3oJ
+
+
+However, it does not ensure the election of a Condorcet winner, which is the candidate who would win a direct election against any other candidate in the race.
+Some advocates of instant-runoff voting argue that the failure to elect a Condorcet winner is positive, as it enables instant­ runoff voting to pass later-no-help and later­ no-harm, which together render the method immune to burying strategy. FairVote, in particular, has stated that they "believe [later-no-harm] is necessary in the context of high-stakes, competitive elections"_[3iJ
+
+
+
+Distribution of winners on a simulated political compass, showing how center-squeeze extends to more complex or multi-dimensional models. The number of winners is displayed as a heatmap. The bias of FPTP, runoffs or primaries, and RCV (center-left column) is clearly visible.
+
+
+Resistance to strategy
+Instant-runoff voting has notably high resistance to tactical voting but less to strategic nomination.
+
+Party strategizing and strategic nomination
+In Australia, preference deals (where one party's voters agree to place another party's voters second, in return for their doing the same) between parties are common. Parties and candidates often encourage their supporters to participate in these preference deals using how-to-vote cards explaining how to use their lower rankings to maximize the chances of their ballot helping to elect someone in the preference deal before it may exhaust.[32]
+Instant runoff may be manipulable via strategic candidate entry and exit, reducing similar candidates' chances of winning. Such manipulation does not need to be intentional, instead acting to deter candidates from running in the first place[.33J Spatial model simulations indicate that instant runoff rewards strategic withdrawal by candidates_[34J[bJ
+
+Tactical voting
+Gibbard's theorem demonstrates that no (deterministic, non-dictatorial) voting method can be entirely immune from tactical voting. This implies that instant-runoff voting is susceptible to tactical voting in some circumstances. In particular, when there exists a Condorcet winner who instant-runoff voting fails to elect, voters who prefer the Condorcet winner to the instant-runoff voting winner have
+
+an incentive to use the compromising strategy_[34J:proposition 17 instant-runoff voting is also sometimes vulnerable to a paradoxical strategy of ranking a candidate higher to make them lose, due to instant­ runoff voting failing the monotonicity criterion.[35]
+
+Research suggests that instant-runoff voting is highly resistant to strategic voting. In a test of multiple methods, instant runoff was found to be the second-most-resistant to tactical voting, after a class of instant runoff-Condorcet hybrids.[36] Instant-runoff voting is also completely immune to the burying
+strategy: ranking a strong opposition candidate lower can't get one's preferred candidate elected.[34]:proposition 3
+
+Tactical voting in instant-runoff voting seeks to alter the order of eliminations in early rounds, to ensure that the original winner is challenged by a stronger opponent in the final round. For example, in a three-party election where voters for both the left and right prefer the centrist candidate to stop the opposing candidate from winning, those voters who care more about defeating the opposition than electing their own candidate may cast a tactical first-preference vote for the centrist candidate.
+
+Spoiler effect
+Proponents of instant-runoff voting claim that instant-runoff voting eliminates the spoiler effect, since instant-runoff voting makes it safe to vote honestly for marginal parties. Under a plurality method, voters who sympathize most strongly with a marginal candidate are strongly encouraged to instead vote for a more popular candidate who shares some of the same principles, since that candidate has a much greater chance of being elected, and a vote for the marginal candidate will not result in the marginal candidate's election. Instant-runoff voting reduces this problem, since the voter can rank the marginal candidate first and the mainstream candidate second; in the likely event that the fringe candidate is eliminated, the vote is not wasted but is transferred to the second preference.
+However, when the third-party candidate is more competitive, they can still act as a spoiler under instant-runoff voting,[37][3S][39] by taking away first-choice votes from the more mainstream candidate until that candidate is eliminated, and then that candidate's second-choice votes helping a more-disliked candidate to win. In these scenarios, it would have been better for the third party voters if their candidate had not run at all (spoiler effect), or if they had voted dishonestly, ranking their
+second-favorite first and their favorite second, rather than first (favorite betrayal)_[4oJThis is the same
+bracketing effect exploited by Robinette and Tideman in their research on strategic campaigning, where a candidate alters their campaign to cause a change in voter honest choice, resulting in the elimination of a candidate who nevertheless remains more preferred by voters. This occurred in the 2022 Alaska's at-large congressional district special election. If Republican Sarah Palin, who lost in the end, had not run, the more centrist Republican candidate, Nick Begich, would have defeated the winning Democratic candidate, Mary Peltola, because the ballot data shows that the votes for the two Republican candidates would have been combined behind Begich and would have exceeded those of Peltola. This did not happen in the IRV election due to the way 15,000 Begich supporters marked their back-up preferences across party lines.[4i]
+
+This may be observed when a candidate leads in the first count but is in the end unsuccessful. For example, in the 2009 Burlington, Vermont, mayoral election, if Kurt Wright, the Republican candidate who lost in the end, had not run, the Democratic candidate, Andy Montroll, would have
+
+defeated the winning Progressive candidate, Bob Kiss. In that sense, the Republican candidate was a spoiler-albeit for an opposing Democrat, rather than some political ally-even though he led in first­ choice support.[39]
+
+Failed criteria
+
+Condorcet winner criterion
+The Condorcet winner criterion states that "if a candidate would win a head-to-head competition against every other candidate, then that candidate must win the overall election". It is incompatible with the later-no-harm criterion, so instant-runoff voting does not meet this criterion.
+Instant-runoff voting is more likely to elect the Condorcet winner than plurality voting and traditional runoff elections. The California cities of Oakland, San Francisco and San Leandro in 2010 provide an example; there were a total of four elections in which the plurality-voting leader in first-choice rankings was defeated, and in each case the instant-runoff voting winner was the Condorcet winner, including a San Francisco election in which the instant-runoff voting winner was in third place in first choice rankings.
+A particularly notable Condorcet failure occurred in the 2009 Burlington mayoral election.
+
+Independence of irrelevant alternatives
+The independence of irrelevant alternatives criterion states that "the election outcome remains the same even if a candidate who cannot win decides to run." Instant-runoff voting violates this. In the general case, instant-runoff voting can be susceptible to strategic nomination: whether or not a candidate decides to run at all can affect the result even if the new candidate cannot themselves win. This is less likely to happen than under plurality, but much more likely than under the Minimax Condorcet method.[34]
+
+
+Monotonicity criterion
+The monotonicity criterion says that a voter ranking a candidate higher on their ballot should not cause that candidate to lose and conversely, that a voter ranking a candidate lower on their ballot should not help that candidate win. The exact probability of a monotonicity failure depends on the circumstances, but with 3 major candidates, the probabilities range from 15 percent under the impartial culture model[42J:Table 6 to 8.5 percent in the case of a strict left-right spectrum_[43J
+	
+
+Participation criterion
+The participation criterion says that candidates should not lose as a result of having "too many voters"-a set of ballots that all rank A> B should not switch the election winner from A to B. Instant­ runoff voting fails this criterion. In his 1984 study, mathematician Depankar Ray found that in elections where instant-runoff voting elects a different candidate from plurality, that there was an estimated 50 percent probability that some voters would have received a more preferable outcome if they had not participated.[44]
+
+Reversal symmetry criterion
+The reversal symmetry criterion states that the first- and last-place candidates should switch places if every ballot is reversed. In other words, it should not matter whether voters rank candidates from best-to-worst and select the best candidate, or whether they rank them worst-to-best and then select the least-bad candidate.
+
+Instant-runoff voting fails this criterion: it is possible to construct an election where reversing the order of every ballot does not alter the final winner; that is, the first- and last-place finishers, according to instant-runoff voting, are the same candidate_[45J
+
+Criticism
+
+The system has had a mixed reception among political scientists and social choice theorists.[46][47] Some have suggested that the system does not do much to decrease the impact of wasted votes relative
+
+to plurality_[4S][49][5o] Research has found instant-runoff voting causes lower confidence in elections[5iJ[52J[53J and does not substantially affect minority representation,[54] voter turnout,[46][5o] or long-run electoral competition.[46][54] Opponents have also noted a high rate of repeals for the system.[52]
+
+Similarity to plurality
+Often instant-runoff voting elections are won by the candidate who leads in first-count vote tallies so they choose the same winner as first-past-the-post voting would have. Such similarity between the two systems means the disproportionality of IRV is about same as results under first-past-the-post.
+Of the Australia federal elections, the 1972 election had the largest number of winners who would not have won under first-past-the-post, but still only 14 out of 125 seats filled were not won by the first­
+count leader[.55] In the Australian federal election in September 2013, 135 out of the 150	House of Representatives seats (or 90  percent) were won by the candidate who led on first preferences. The
+other 15 seats (10 percent) were won by the candidate who placed second on first preferences.[56]
+
+Participation
+The effect of instant-runoff voting on voter turnout is difficult to assess. In a 2021 report, researchers at New America, a think tank based in Washington, D.C., said it may increase turnout by attracting
+	
+more and more diverse candidates, but the impact would be realized most significantly by eliminating the need for primaries.[57] The overall impact on diversity of candidates is difficult to detect.[46]
+
+Invalid, incomplete and exhausted ballots
+All forms of ranked-choice voting reduce to plurality when all ballots rank only one candidate. By extension, ballots for which all candidates ranked are eliminated are equivalent to votes for any non­ winner in plurality, and considered exhausted ballots.
+
+
+Some political scientists have found the IRV system contributes to higher rates of spoiled votes,[49] partly because the ballot marking is more complex_[49J[i9J Most jurisdictions with instant-runoff voting do not require complete rankings and may use columns to indicate preference instead of
+numbers. In American elections with instant-runoff voting, more than 99 percent of voters typically cast a valid ballot.[sS]
+
+A 2015 study of four local US elections that used instant-runoff voting found that inactive ballots occurred often enough in each of them that the winner of each election did not receive a majority of votes cast in the first round. The rate of inactive ballots in each election ranged from a low of 9.6 percent to a high of 27.1 percent.[59]
+
+Terminology
+
+
+While instant run-off voting is distinguished from its multiple wmner equivalent, the single transferable vote, most English-speaking discussion of electoral systems does not differentiate them. In Ireland, one of the few countries to use these systems in all elections, no distinction between the
+
+two is made, either by the general population or in legal texts. The Constitution of Ireland describes the electoral system as "proportional representation by means of the single transferable vote",[60] as
+do all other statutory authorities, when referring to either single-winner or multiple-winner elections. The acronym "PR-STV" is in general use to describe both types of elections. Examples of single­ winner elections in Ireland which are described officially as "proportional representation by means of the single transferable vote" are the election of the President and the election of the Ceann Comhairle (chairperson of Dail Eireann). The lack of distinction between the systems in Ireland reflects that there is no difference in the mechanics of the process from election to election, only the number of candidates to be elected by that process. This is not always the case when discussing the systems in the abstract, as there are many variations in how such elections could be run.
+Instant-runoff voting derives its name from the way the ballot count simulates a series of runoffs, similar to an exhaustive ballot system, except that voters do not need to turn out several times to vote.[61] It is also known as the alternative vote, transferable vote, ranked-choice voting (RCV), single­
+seat ranked-choice voting, or preferential voting (but use of some of those terms may lead to misunderstanding as they also apply to single transferable vote}62]
+Britons and New Zealanders generally call instant-runoff voting the "alternative vote" (AV).[63][64]
+Australians, who use instant-runoff voting for most single winner elections, call instant-runoff voting "preferential voting".[6S] While this term is widely used by Australians, it is somewhat of a misnomer.
+Depending on how "preferential" is defined, the term would include all voting systems, apply to any system that uses ranked ballots (thus both instant-runoff voting and single transferable vote), or would exclude instant-runoff voting (instant-runoff voting fails positive responsiveness because ballot markings are not interpreted as "preferences" in the traditional sense. Under instant-runoff voting (and single transferable vote), secondary preferences are used as back-up preferences/contingency votes).
+
+Jurisdictions in the United States such as San Francisco, Minneapolis, Maine, and Alaska have tended to use the term "ranked-choice voting" in their laws that apply to instant-runoff voting contests. The San Francisco Department of Elections claimed the word "instant" in the term "instant-runoff voting" could confuse voters into expecting results to be immediately available.[66][67] As a result of American
+influence, the term ranked-choice voting is often used in Canada as well.[68] When discussing his promise of electoral reform, Canadian Prime Minister Justin Trudeau used the term "preferential ballot".[69]
+
+American NGO FairVote has promoted the terminology "ranked-choice voting" to refer to instant­ runoff voting,[6SJ[7oJ a choice that has caused controversy and accusations that the organization is attempting to obscure the existence of other ranked-choice methods that are competing or could compete with instant-runoff voting.
+Instant-runoff voting is occasionally referred to as Hare's method[7iJ (after Thomas Hare) to differentiate it from other ranked-choice voting methods such as majority-choice voting, Borda, and Bucklin, which use weighted preferences or methods that allow voter's lower preference to be used against voter's most-preferred choice.
+
+When the single transferable vote (STV) method is applied to a single-winner election, it becomes instant-runoff voting; the government of Ireland has called instant-runoff voting "proportional representation" based on the fact that the same ballot form is used to elect its president by instant­ runoff voting and parliamentary seats by proportional representation (single transferable vote), but instant-runoff voting is a non-proportional single-winner election method, while single transferable vote elects multiple winners and produces minority representation, as well as majority representation, in almost all cases.[72]
+
+State law in South Carolina[73Jand Arkansas[74Juse "instant runoff' to describe the practice of having certain categories of absentee voters cast ranked-choice ballots before the first round of an election and counting those ballots in any subsequent runoff elections.
+
+History and use
+
+
+History
+According to mathematician Edward J. Nanson, the method was first described by the Marquis de Condorcet in 1788, "but only to be condemned"_[7sJ[76J It was later independently reinvented by Thomas Hare (of England) and Carl Andrae (of Denmark) in the form of the single transferable vote, while Henry Richmond Droop and William R. Ware were the first to apply it to single-winner races.[77J[7SJ
+
+Adoption
+Instant-runoff voting has found some use in national elections in several countries, predominantly in the Anglosphere. It is used to elect members of the Australian House of Representatives and the National Parliament of Papua New Guinea, and to elect the head of state in India, Ireland, and Sri
+		
+
+Lanka.
+
+In Alaska, it is used for general elections, after a top-four nonpartisan primary,[79] while in Maine it is used for both general elections and for primary elections (held separately by each party), excluding those for president_[So][Si][S2J
+
+Robert's Rules of Order
+In the United States, the sequential elimination method used by instant-runoff voting is described in Robert's Rules of Order Newly Revised as an example of ranked-choice voting that can be used to elect officers_[S3] Robert's Rules note that ranked-choice systems (including instant-runoff voting) are an improvement on simple plurality but recommend against runoff-based methods because they often prevent the emergence of a consensus candidate with broad support. The book instead recommends repeated balloting until some candidate manages to win a majority of votes. Two other books on American parliamentary procedure, The Standard Code of Parliamentary Procedure[B4] and Riddick's Rules of Procedure,[85] take a similar stance.
+
+
+Examples
+
+
+1990 Irish presidential election
+The 1990 Irish presidential election provides a simple example of how instant-runoff voting can produce a different result from first-preference plurality and prevent some kinds of vote-splitting. The three major candidates were Brian Lenihan of Fianna Fail, Austin Currie of Fine Gael, and Mary Robinson of the Labour Party. In the first round, Lenihan had the largest share of first-choice rankings but not a majority. Currie had the fewest votes and was eliminated. After this, Robinson received 82 percent of Currie's votes. This was enough for her vote tally to pass that of Lenihan.
+
+Irish presidential election, 1990 86
+
+CandidateRound 1Round 2Mary Robinson612,26538.7%817,83051.6%Brian Lenihan694,48443.8%731,27346.2%16.9%EliminatedAustin Currie267,902Exhausted ballots9,4440.6%34,9922.2%Total1,584,095100%1,584,095100%
+2014 Prahran election (Victoria)
+Another real-life example of instant-runoff voting producing results different from first-past-the-post can be seen in the 2014 Victorian general election in Prahran. In this rare instance, the candidate who initially placed third, (Greens candidate Sam Bibbins), won the seat_[S7] In the 7th and final round,
+
+
+Bibbins narrowly defeated Liberal candidate Clem Newton-Brown by a margin of 277 votes, having eliminated Neil Pharaoh by the even narrower margin of 31 votes in the previous round.
+
+
+2009 Burlington mayoral election
+
+Burlington mayoral election, 2009 (round-by-round analysis of votes)
+
+Candidates1st round2nd round3rd roundCandidatePartyVotes±Votes±Votes±Bob KissProgressive2585+25852981+3964313+1332Kurt WrightRepublican2951+29513294+3434061+767Andy MontrollDemocrat2063+20632554+491EliminatedDan SmithIndependent1306+1306EliminatedOthers71+71EliminatedExhausted4+4151+147606+455
+Burlington, Vermont's second IRV election in 2009 resulted in Bob Kiss defeating the majority­ preferred candidate, Andy Montroll. Although 54 percent of voters ranked Montroll above Kiss,
+
+Montroll was defeated as a result of a first-round spoiler effect,[88] violating the principle of majority
+rule.[89][90][91][92]
+
+FairVote touted the 2009 election as one of its major success stories,[93J claiming it helped the city save on costs of a traditional runoft193][94J and prevented a spoiler effect,[95] although later analysis
+showed that without Wright in the election, Montroll would have defeated Kiss in a one-on-one race_[S9J
+
+Mathematicians and voting theorists criticized the election results as revealing several pathologies associated with instant-runoff voting, noting Kiss only won because of 750 votes cast against his candidacy (ranking Kiss in last place).[96][97]
+
+
+Similar methods
+
+
+
+Runoff voting
+The term instant-runoff voting is derived from the name of a class of voting methods called runoff voting. In runoff voting voters do not rank candidates on the ballot - each voter marks only one preference. When no candidate receives a majority of voters in the first round, voters cast votes in two or more subsequent rounds of voting as the field of candidates is reduced. Multi-round runoff voting methods allow voters to change their preferences in each round, incorporating the results of the prior round to influence their decision, which is not possible in instant-runoff voting.
+The runoff method closest to instant-runoff voting is the exhaustive ballot. In this method-familiar to fans of the television show American Idol-one candidate is eliminated in each round, and many rounds of voting may be necessary. Because holding many rounds of voting on separate days is generally expensive, the exhaustive ballot is not used for large-scale, public elections.
+A more practical form of runoff voting is the two-round system. If no candidate receives a majority of votes in the first round, all but the top-two candidates are excluded after the first round, and just one more round of voting determines the winner. Eliminations can occur with or without allowing and applying preference votes to choose the final two candidates. This method is used in Mali and France, and in Finnish and Slovenian presidential elections.
+
+Contingent vote
+The contingent vote, also known as "top-two instant-runoff voting" ("top­ two IRV"), is the same as instant-runoff voting, except that if no candidate achieves a majority in the first round of counting, all but the two candidates with the most votes are eliminated, and the second preferences for those ballots are counted. As in instant-runoff voting, there is only one round of voting. Unlike instant-runoff voting, the vote count process entails only two rounds of counting, while instant-runoff voting can entail many rounds.
+
+
+Under a variant of contingent voting used in Sri Lanka, and formerly for the elections for Mayor of London in the United Kingdom, voters rank a specified maximum number of candidates. In London, the supplementary vote allowed[c] voters to express first and second preferences only. Sri Lankan voters rank up to three candidates to elect the president of Sri Lanka.
+
+
+
+
+
+
+
+Top-two instant-runoff voting
+
+
+
+While similar to "sequential-elimination" instant-runoff voting, top-two can produce different results. Excluding more than one candidate after the first count might eliminate a candidate who would have won under sequential elimination instant-runoff voting. Restricting voters to a maximum number of
+
+preferences is more likely to exhaust ballots if voters do not anticipate which candidates will finish in the top two. This can encourage voters to vote more tactically, by ranking at least one candidate they think is likely to win.
+Conversely, a practical benefit of 'contingent voting' is expediency and confidence in the result with only two rounds.
+
+Larger runoff process
+Instant-runoff voting may also be part of a larger runoff process:
+
+¦ Some jurisdictions that hold runoff elections allow absentee (only) voters to submit ranked ballots, because the interval between rounds of balloting is too short for a second round of absentee voting. Ranked ballots enable absentee votes to count in the second (general) election round if their first choice does not make the second round runoff. Arkansas, South Carolina and Springfield, Illinois adopt this approach. 98 Louisiana uses it only for members of the United States Service or who reside overseas.l991
+¦ Under some exhaustive ballot runoff systems, instant-runoff voting may be used to quickly eliminate some weak candidates in early rounds, using rules to leave a desired number of candidates for further balloting.
+¦ Instant-runoff voting elections that require a majority of cast ballots but not that voters rank all candidates may require more than a single instant-runoff voting contest due to exhausted ballots. (Most IRV systems require a winner to have only a majority of votes still in play, not a majority of votes cast.)
+¦ Robert's Rules recommends preferential voting for elections by mail and requiring a majority of votes to elect a winner. For in-person elections, they recommend repeated balloting until one candidate receives a majority of votes; if candidates drop out when it becomes clear they will not win, this procedure will always elect a Condorcet winner. The use of repeated balloting allows voters to resolve Condorcet cycles by discussion and compromise, or by electing a consensus candidate who might have polled poorly in the initial election.[831
+
+Variations
+A number of instant-runoff voting methods, varying as to ballot design and as to whether or not voters are obliged to rank all the candidates, are in use in different countries and local governments.
+In an optional preferential voting system, voters can give a preference to as many candidates as they wish. They may make only a single choice, known as "bullet voting", and some jurisdictions accept a single box marked with an "X" (as opposed to a numeral "1") as valid for the first preference. Bullet voting may result in exhausted ballots, where all of a voter's preferences are eliminated before a candidate is elected, such that the "majority" in the final round may constitute only a minority of all ballots cast. Optional preferential voting is used for elections for the President of Ireland as well as some elections in New South Wales and Queensland_[ioo][ioi]
+	
+In a full-preferential voting method, voters are required to mark a preference for every candidate standing[. 102] Ballots that do not contain a ranking of all candidates are in some jurisdictions considered spoilt or invalid, even if there are only two candidates standing. The full-preferential voting method can become burdensome in elections with many candidates and can lead to "donkey voting", in which some voters simply choose candidates at random or in top-to-bottom order, or a
+
+
+voter may order his or her preferred candidates and then fill in the remainder on a donkey basis. Full preferential voting is used for elections to the Australian federal parliament and for most state parliaments.
+
+Other methods only allow marking preferences for a maximum of the voter's top three favorites, a form of partial preferential voting.[103] Such a system produces exhausted votes even when the voter would have been willing to rank more candidates.
+A version of instant-runoff voting applying to the ranking of parties was first proposed for elections in Germany in 2013[104] as spare vote.
+
+See also
+
+¦ Single transferable vote, a proportional method that reduces to instant runoff in single-winner elections.
+¦ Ranked voting
+¦ Comparison of electoral systems
+
+¦ Alternative vote plus (AV+), or alternative vote top-up, proposed by the Jenkins Commission in the UK
+¦ Duverger's law
+
+¦ Two-party-preferred vote
+¦ Write-in candidate	Example of a full preferential ballot paper
+
+
+Notes
+
+a. This procedure can be sped up by eliminating more than one candidate if their combined top preferences are less than the next-lowest remaining candidate; this process is sometimes called batch elimination. When batch elimination is used, the procedure can terminate if some candidate has a majority.
+b. Figure 4 on page 137 shows instant-runoff voting having exit incentive despite being clone independent.
+c. Following the Elections Act 2022, voting in mayoral elections now takes place under the first-past­ the-post system.
+
+References
+
+1. Nurmi, Hannu (June 2005). "Aggregation problems in policy evaluation: an overview" (https://dx.d oi.org/10.1016/j.ejpoleco.2004.08.001). European Journal of Political Economy. 21 (2): 287-300. doi:10.1016/j.ejpoleco.2004.08.001 (https://doi.org/10.1016%2Fj.ejpoleco.2004.08.001).
+ISSN 0176-2680 (https://search.worldcat.org/issn/0176-2680).
+
+2. Aubin, Jean-Baptiste; Gannaz, Irene; Leoni-Aubin, Samuela; Rolland, Antoine (July 2024). A
+simulation-based study of proximity between voting rules (https://hal.science/hal-04631154/).
+3. Hyman, Ross; Otis, Deb; Allen, Seamus; Dennis, Greg (1 September 2024). "A majority rule philosophy for instant runoff voting" (https://link.springer.com/article/10.1007/s10602-024-09442- 3 . Constitutional Political Economy. 35 (3): 425-436. arXiv:2308.08430 (https://arxiv.org/abs/230
+
+8.08430).  doi:10.1007/s10602-024-09442-3  (https://doi.org/10.1007%2Fs10602-024-09442-3).
+ISSN 1572-9966 (https://search.worldcat.org/issn/1572-9966).
+
+4. Condorcet, Jean-Antoine-Nicolas de Caritat (1788). "On the Constitution and the Functions of Provincial Assemblies" (https://books.google.com/books?id=d0cwAAAAYAAJ&q=Oeuvres%20d e%20Condorcet,%20Volume%2013&pg=PA243). Complete Works of Condorcet (in French).
+Vol. 13 (published 1804). p. 243. "En effet, lorsqu'il y a plus de trois concurrents, le veritable vrau de la pluralite peut etre pour un candidat qui n'ait eu aucune des voix dans le premier scrutin."
+5. Nanson, E. J. (1882). "Methods of election: Ware's Method" (https://archive.org/details/transaction sproc1719roya/page/206). Transactions and Proceedings of the Royal Society of Victoria. 17: 206. "The method was, however, mentioned by Condorcet, but only to be condemned."
+6. Campbell, D.E.; Kelly, J.S. (2000). "A simple characterization of majority rule". Economic Theory.
+15 (3): 689-700. doi:10.1007/s001990050318 (https://doi.org/10.1007%2Fs001990050318).
+JSTOR 25055296 (https://www.jstor.org/stable/25055296). S2CID 122290254 (https://api.semanti cscholar.org/CorpuslD:122290254).
+
+7. McGann, Anthony J.; Koetzle, William; Grofman, Bernard (2002). "How an Ideologically Concentrated Minority Can Trump a Dispersed Majority: Nonmedian Voter Results for Plurality, Run-off, and Sequential Elimination Elections" (https://www.jstor.org/stable/3088418). American Journal of Political Science. 46 (1): 134-147. doi:10.2307/3088418 (https://doi.org/10.2307%2F30
+88418). ISSN 0092-5853 (https://search.worldcat.org/issn/0092-5853). JSTOR 3088418 (https://w ww.jstor.org/stable/3088418). "As with simple plurality elections, it is apparent the outcome will be highly sensitive to the distribution of candidates."
+8. Doron, Gideon; Kronick, Richard (1977). "Single Transferrable Vote: An Example of a Perverse Social Choice Function" (https://www.jstor.org/stable/2110496). American Journal of Political Science. 21 (2): 303-311. doi:10.2307/2110496 (https://doi.org/10.2307%2F2110496).
+ISSN 0092-5853 (https://search.worldcat.org/issn/0092-5853). JSTOR 2110496 (https://www.jstor. org/stable/2110496).
+
+9. Nurmi, Hannu (December 1996). "It's not just the lack of monotonicity1" (http://www.tandfonline.co m/doi/abs/10.1080/00344899608522986). Representation. 34 (1): 48-52. doi:10.1080/00344899608522986 (https://doi.org/10.1080%2F00344899608522986). ISSN 0034-
+4893  (https://search.worldcat.org/issn/0034-4893).
+10. Atkinson, Nathan; Ganz, Scott C. (30 October 2022). "The flaw in ranked-choice voting: rewarding extremists" (https://thehill.com/opinion/campaign/3711206-the-flaw-in-ranked-choice-voting-rewar ding-extremists/). The Hill. Retrieved 14 May 2023. "However, ranked-choice voting makes it more difficult to elect moderate candidates when the electorate is polarized. For example, in a three­ person race, the moderate candidate may be preferred by a majority of voters to each of the more extreme candidates. However, voters with far-left and far-right views will rank the candidate in second place rather than in first place. Since ranked-choice voting counts only the number of first­ choice votes (among the remaining candidates), the moderate candidate would be eliminated in the first round, leaving one of the extreme candidates to be declared the winner."
+11. McGann, Anthony J.; Koetzle, William; Grofman, Bernard (2002). "How an Ideologically Concentrated Minority Can Trump a Dispersed Majority: Nonmedian Voter Results for Plurality, Run-off, and Sequential Elimination Elections" (https://www.jstor.org/stable/3088418). American Journal of Political Science. 46 (1): 134-147. doi:10.2307/3088418 (https://doi.org/10.2307%2F30
+88418). ISSN 0092-5853 (https://search.worldcat.org/issn/0092-5853). JSTOR 3088418 (https://w ww.jstor.org/stable/3088418). "As with simple plurality elections, it is apparent the outcome will be highly sensitive to the distribution of candidates."
+
+12. Merrill, Samuel (1985). "A statistical model for Condorcet efficiency based on simulation under spatial model assumptions" (https://dx.doi.org/10.1007/bf00127534). Public Choice. 47 (2): 389-
+403. doi:10.1007/bf00127534 (https://doi.org/10.1007%2Fbf00127534). ISSN 0048-5829 (https://s earch.worldcat.org/issn/0048-5829). "the 'squeeze effect' that tends to reduce Condorcet efficiency if the relative dispersion (RD) of candidates is low. This effect is particularly strong for the plurality, runoff, and Hare systems, for which the garnering of first-place votes in a large field is essential to winning"
+13. Merrill, Samuel (1984). "A Comparison of Efficiency of Multicandidate Electoral Systems" (https://d x.doi.org/10.2307/2110786). American Journal of Political Science. 28 (1): 23-48. doi:10.2307/2110786 (https://doi.org/10.2307%2F2110786). ISSN 0092-5853 (https://search.world cat.org/issn/0092-5853). JSTOR 2110786 (https://www.jstor.org/stable/2110786). "However, squeezed by surrounding opponents, a centrist candidate may receive few first-place votes and be eliminated under Hare."
+14. Robinette, Robbie (1 September 2023). "Implications of strategic position choices by candidates" (https://doi.org/10.1007%2Fs10602-022-09378-6). Constitutional Political Economy. 34 (3): 445-
+457. doi:10.1007/s10602-022-09378-6 (https://doi.org/10.1007%2Fs10602-022-09378-6).
+ISSN 1572-9966 (https://search.worldcat.org/issn/1572-9966).
+
+15. Atkinson, Nathan; Ganz, Scott (2024). "Robust Electoral Competition: Rethinking Electoral Systems to Encourage Representative Outcomes". SSRN Electronic Journal. Elsevier BV. doi:10.2139/ssrn.4728225 (https://doi.org/10.2139%2Fssrn.4728225). ISSN 1556-5068 (https://se arch.worldcat.org/issn/1556-5068).
+16. Hyman, Ross; Otis, Deb; Allen, Seamus; Dennis, Greg (September 2024). "A Majority Rule Philosophy for Instant Runoff Voting". Constitutional Political Economy. 35 (3): 425-436. arXiv:2308.08430 (https://arxiv.org/abs/2308.08430). doi:10.1007/s10602-024-09442-3 (https://do i.org/10.1007%2Fs10602-024-09442-3). ISSN 1043-4062 (https://search.worldcat.org/issn/1043-4 062.
+17. Nanson, E. J. (1882). "Methods of election: Ware's Method" (https://archive.org/details/transaction sproc1719roya/page/206). Transactions and Proceedings of the Royal Society of Victoria. 17: 206. "This method is a perfectly feasible and practicable one for elections on any scale ... [i]t is a
+simple and obvious extension of the French system..."
+18. Albinski, Henry s. (1973). Canadian and Australian politics in comparative perspective. New York: Oxford University Press. p. 271. ISBN 9780195016826.
+19. Graham-Squire, Adam; McCune, David (6 March 2023). "An Examination of Ranked Choice Voting in the United States, 2004-2022". arXiv:2301.12075 (https://arxiv.org/abs/2301.12075) [econ.GN (https://arxiv.org/archive/econ.GN)].
+20. Dopp, Kathy Anne (2011). "Realities Mar Instant Runoff Voting Flaws and Benefits of IRV". SSRN 1858374 (https://papers.ssrn.com/sol3/papers.cfm?abstract id=1858374).
+
+21. Merrill, Samuel (1985). "A statistical model for Condorcet efficiency based on simulation under spatial model assumptions" (https://dx.doi.org/10.1007/bf00127534). Public Choice. 47 (2): 389-
+403. doi:10.1007/bf00127534 (https://doi.org/10.1007%2Fbf00127534). ISSN 0048-5829 (https://s earch.worldcat.org/issn/0048-5829). "the 'squeeze effect' that tends to reduce Condorcet efficiency if the relative dispersion (RD) of candidates is low. This effect is particularly strong for the plurality, runoff, and Hare systems, for which the garnering of first-place votes in a large field is essential to winning"
+22. Merrill, Samuel (1984). "A Comparison of Efficiency of Multicandidate Electoral Systems" (https://d x.doi.org/10.2307/2110786). American Journal of Political Science. 28 (1): 23-48. doi:10.2307/2110786 (https://doi.org/10.2307%2F2110786). ISSN 0092-5853 (https://search.world cat.org/issn/0092-5853). JSTOR 2110786 (https://www.jstor.org/stable/2110786). "However, squeezed by surrounding opponents, a centrist candidate may receive few first-place votes and be eliminated under Hare."
+
+23. Atkinson, Nathan; Ganz, Scott C. (30 October 2022). "The flaw in ranked-choice voting: rewarding extremists" (https://thehill.com/opinion/campaign/3711206-the-flaw-in-ranked-choice-voting-rewar ding-extremists/). The Hill. Retrieved 14 May 2023. "However, ranked-choice voting makes it more difficult to elect moderate candidates when the electorate is polarized. For example, in a three­ person race, the moderate candidate may be preferred by a majority of voters to each of the more extreme candidates. However, voters with far-left and far-right views will rank the candidate in second place rather than in first place. Since ranked-choice voting counts only the number of first­ choice votes (among the remaining candidates), the moderate candidate would be eliminated in the first round, leaving one of the extreme candidates to be declared the winner."
+24. Foley, Edward B. (17 August 2024). "What is "Centripetalism" and Why Does It Matter?" (https://e dwardbfoley.substack.com/p/what-is-centripetalism-and-why-does). Common Ground Democracy. Retrieved 30 January 2025.
+25. McGann, Anthony J.; Koetzle, William; Grofman, Bernard (2002). "How an Ideologically Concentrated Minority Can Trump a Dispersed Majority: Nonmedian Voter Results for Plurality, Run-off, and Sequential Elimination Elections" (https://www.jstor.org/stable/3088418). American Journal of Political Science. 46 (1): 134-147. doi:10.2307/3088418 (https://doi.org/10.2307%2F30
+88418). ISSN 0092-5853 (https://search.worldcat.org/issn/0092-5853). JSTOR 3088418 (https://w ww.jstor.org/stable/3088418). "As with simple plurality elections, it is apparent the outcome will be highly sensitive to the distribution of candidates."
+26. "IRV and Core Support" (https://web.archive.org/web/20240407002040/https://electionscience.or g/library/irv-and-core-support/). The Center for Election Science. Archived from the original (http s://www.electionscience.org/library/irv-and-core-support/) on 7 April 2024. Retrieved 4 December
+2019.
+27. Graham-Squire, Adam; McCune, David (11 September 2022). "A Mathematical Analysis of the 2022 Alaska Special Election for US House". p. 2. arXiv:2209.04764v3 (https://arxiv.org/abs/2209. 04764v3) [econ.GN (https://arxiv.org/archive/econ.GN)]. "Since Begich wins both ... he is the Condorcet winner of the election ... AK election also contains a Condorcet loser: Sarah Palin.... she is also a spoiler candidate"
+28. Balinski, Michel; Laraki, Rida (2011), "Election by Majority Judgment: Experimental Evidence" (htt ps://link.springer.com/chapter/10.1007/978-1-4419-7539-3 2), in Dolez, Bernard; Grofman, Bernard; Laurent, Annie (eds.), In Situ and Laboratory Experiments on Electoral Law Reform: French Presidential Elections, New York, NY: Springer, pp. 13-54, doi:10.1007/978-1-4419-7539-
+3 2 (https://doi.org/10.1007%2F978-1-4419-7539-3 2), ISBN 978-1-4419-7539-3, retrieved
+	
+31 October 2024
+29. Balinski, Michel; Laraki, Rida (1 March 2020). "Majority judgment vs. majority rule" (https://doi.org/ 10.1007%2Fs00355-019-01200-x). Social Choice and Welfare. 54 (2): 429-461. doi:10.1007/s00355-019-01200-x (https://doi.org/10.1007%2Fs00355-019-01200-x). ISSN 1432-
+217X (https://search.worldcat.org/issn/1432-217X).
+30. Chamberlin, John R.; Cohen, Michael D. (1978). "Toward Applicable Social Choice Theory: A Comparison of Social Choice Functions under Spatial Model Assumptions". American Political Science Review. 72 (4). Cambridge University Press (CUP): 1341-1356. doi:10.2307/1954543 (ht tps://doi.org/10.2307%2F1954543). ISSN 0003-0554 (https://search.worldcat.org/issn/0003-0554). JSTOR 1954543 (https://www.jstor.org/stable/1954543). "A long-established response to the 'wasted vote' problem is the method advocated by Hare..."
+31. "How is RCV better than Approval, Score or Condorcet voting methods?" (https://fairvote.org/how is rev better than approval_score or condorcet voting_methods/). FairVote. 23 October 2018. Retrieved 1 March 2025.
+32. "Explained: What are 'preference deals' and how do they influence my vote?" (https://www.9news. com.au/national/explainer-preference-deals-and-how-australias-voting-system-works/7078d92b-d 6a6-4b37-919a-3aad0a13e873). 9News. 20 May 2022.
+
+33. Robinette, Robbie (2 February 2023). "Implications of strategic position choices by candidates" (ht tps://doi.org/10.1007%2Fs10602-022-09378-6). Constitutional Political Economy. 34 (3). Springer Science and Business Media LLC: 445-457. doi:10.1007/s10602-022-09378-6 (https://doi.org/10. 1007%2Fs10602-022-09378-6). ISSN 1043-4062 (https://search.worldcat.org/issn/1043-4062).
+34. Green-Armytage, James (2014). "Strategic voting and nomination" (http://www.jstor.org/stable/436 63746). Social Choice and Welfare. 42 (1). Springer: 111-138. doi:10.1007/s00355-013-0725-3 (h ttps://doi.org/10.1007%2Fs00355-013-0725-3). ISSN 0176-1714 (https://search.worldcat.org/issn/ 0176-1714). JSTOR 43663746 (https://www.jstor.org/stable/43663746). S2CID 253847024 (http
+    
+s://api.semanticscholar.org/CorpuslD:253847024). Retrieved 23 February 2024.
+
+35. "Monotonicity and instant-runoff voting - Why the Monotonicity Criterion is of Little Import" (http://a rchive.fairvote.org/?page=2261). archive.fairvote.org. Retrieved 17 April 2011.
+
+36. Green-Armytage, James (2011). "Four Condorcet-Hare Hybrid Methods for Single-Winner Elections" (https://www.votingmatters.org.uk/lSSUE29/l29P1.pdf) (PDF). Voting matters. Retrieved 25 October 2024. "HRSV and HRSN are abbreviations for 'highly resistant to strategic voting', and 'highly resistant to strategic nomination'. (Of course, reducing the simulation results to a binary score requires the imposition of a somewhat arbitrary cut-off, but in general, the methods deemed 'highly resistant' in each category perform substantially better than the others.)"
+37. Borgers, Christoph (2010). Mathematics of Social Choice: Voting, Compensation, and Division (htt ps://books.google.com/books?id=u XMHD4shnQC). SIAM. ISBN 9780898716955. "Candidates C and D spoiled the election for B ... With them in the running, A won, whereas without them in the running, B would have won.... Instant runoff voting ... does not do away with the spoiler problem entirely, although it ... makes it less likely"
+38. Poundstone, William (2009). Gaming the Vote: Why Elections Aren't Fair (and What We Can Do About It) (https://books.google.com/books?id= 24bJHyBV6sC). Farrar, Straus and Giroux.
+ISBN 9781429957649. "IRV is excellent for preventing classic spoilers-minor candidates who irrationally tip the election from one major candidate to another. It is not so good when the 'spoiler' has a real chance of winning"
+39. Bristow-Johnson, R. (2023). "The failure of Instant Runoff to accomplish the purpose for which it was adopted: a case study from Burlington Vermont" (https://doi.org/10.1007/s10602-023-09393-
+1 (PDF). Const Polit Econ. 34 (3): 378-389. doi:10.1007/s10602-023-09393-1 (https://doi.org/10. 1007%2Fs10602-023-09393-1). S2CID 255657135 (https://api.semanticscholar.org/CorpuslD:255 657135). Retrieved 9 January 2024.
+
+40. O'Neill, Jeffrey C. (2006). "Everything That Can be Counted Does Not Necessarily Count: The Right to Vote and the Choice of a Voting System". p. 340. SSRN 883058 (https://papers.ssrn.com/ sol3/papers.cfm?abstract id=883058). "With instant runoff voting ... The strategy for the liberal voter is the same as for plurality voting: Her favorite candidate cannot win, so she casts her vote for her favorite candidate with a realistic chance of winning"
+41. Graham-Squire, Adam; McCune, David (2022). "A Mathematical Analysis of the 2022 Alaska Special Election for US House". arXiv:2209.04764v1 (https://arxiv.org/abs/2209.04764v1) [econ.GN (https://arxiv.org/archive/econ.GN)].
+42. Miller, Nicholas R. (2012). "Monotonicity failure in IRV elections with three candidates". World meeting of the public choice societies.
+43. Lepelley, Dominique; Chantreuil, Frederic; Berg, Sven (1996). "The likelihood of monotonicity paradoxes in run-off elections". Mathematical Social Sciences. 31 (3): 133-146. doi:10.1016/0165-4896(95)00804-7 (https://doi.org/10.1016%2F0165-4896%2895%2900804-7).
+44. Ray, Depankar (1986). "On the practical possibility of a 'no show paradox' under the single transferable vote". Mathematical Social Sciences. 11 (2): 183-189. doi:10.1016/0165-
+4896(86)90024-7 (https://doi.org/10.1016%2F0165-4896%2886%2990024-7).
+
+45. Felsenthal, Dan S. (2012). "Review of Paradoxes Afflicting Procedures for Electing a Single Candidate" (http://link.springer.com/10.1007/978-3-642-20441-8 3). In Felsenthal, Dan S.; Machover, Moshe (eds.). Electoral Systems. Studies in Choice and Welfare. Berlin, Heidelberg: Springer Berlin Heidelberg. pp. 19-91 [§ 3.5.2.4]. doi:10.1007/978-3-642-20441-8 3 (https://doi.or g/10.1007%2F978-3-642-20441-8 3). ISBN 978-3-642-20440-1. Retrieved 8 November 2024.
+	
+46. Drutman, Lee; Strano, Maresa (10 November 2021). "What We Know About Ranked-Choice Voting" (https://www.newamerica.org/political-reform/reports/what-we-know-about-ranked-choice-v oting/conclusion/). New America. Retrieved 28 February 2023.
+47. Drutman, Lee (18 September 2023). "How I updated my views on ranked choice voting" (https://le edrutman.substack.com/p/how-i-updated-my-views-on-ranked). Undercurrent Events. Retrieved
+
+2 September 2024.
+48. "Understanding the Limited Preferential Voting system - EMTV Online" (https://emtv.com.pg/under standing-the-limited-preferential-voting-system/). 10 April 2017. Retrieved 18 February 2021.
+49. Pettigrew, Stephen; Radley, Dylan (2023). "Ballot Marking Errors in Ranked-Choice Voting". SSRN 4670677 (https://papers.ssrn.com/sol3/papers.cfm?abstract id=4670677).
+ 
+50. Endersby, James W.; Towle, Michael J. (1 March 2014). "Making wasted votes count: Turnout, transfers, and preferential voting in practice" (https://www.sciencedirect.com/science/article/abs/pi i/S0261379413000930). Electoral Studies. 33: 144-152. doi:10.1016/j.electstud.2013.07.001 (http s://doi.org/10.1016%2Fj.electstud.2013.07.001). ISSN 0261-3794 (https://search.worldcat.org/iss n/0261-3794).
+51. "The Effect of Ranked-Choice Voting in Maine MIT Election Lab" (https://electionlab.mit.edu/articl es/effect-ranked-choice-voting-maine). electionlab.mit.edu. Retrieved 2 September 2024.
+
+52. Cerrone, Joseph; McClintock, Cynthia (August 2023). "Come-from-behind victories under ranked­ choice voting and runoff: The impact on voter satisfaction" (https://onlinelibrary.wiley.com/doi/10.11 11/polp.12544). Politics & Policy. 51 (4): 569-587. doi:10.1111/polp.12544 (https://doi.org/10.111 1%2Fpolp.12544 ). ISSN 1555-5623 (https://search.worldcat.org/issn/1555-5623).
+53. Nielson, Lindsay (August 2017). "Ranked Choice Voting and Attitudes toward Democracy in the United States: Results from a Survey Experiment" (https://onlinelibrary.wiley.com/doi/10.1111/polp. 12212). Politics & Policy. 45 (4): 535-570. doi:10.1111/polp.12212 (https://doi.org/10.1111%2Fpol p.12212). ISSN 1555-5623 (https://search.worldcat.org/issn/1555-5623).
+54. "The Short-Term Impact of Ranked-Choice Voting on Candidate Entry and Descriptive Representation" (https://www.newamerica.org/political-reform/reports/rcv-impact-on-candidate-ent ry-and-representation/). New America. Retrieved 2 September 2024.
+55. Green, Antony (11 May 2010). "Preferential Voting in Australia" (https://www.abc.net.au/news/2010
+-05-12/preferential-voting-in-australia/9389472). www.abc.net.au. Retrieved 1 November 2020.
+56. Green, Antony (8 September 2015). "Preferences, Donkey Votes and the Canning By-Election" (ht tps://www.abc.net.au/news/2015-09-08/preferences-donkey-votes-and-the-canning-by-election/93 88654). Antony Green. Australian Broadcasting Corporation. Archived (https://web.archive.org/we b/20180326041328/https://www.abc.net.au/news/2015-09-08/preferences-donkey-votes-and-the-c anning-by-election/9388654) from the original on 26 March 2018. Retrieved 8 September 2015. "...15 seats where preferences definitely determined the result by electing a second placed candidate"
+57. "What We Know About Ranked-Choice Voting" (http://newamerica.org/political-reform/reports/wha t-we-know-about-ranked-choice-voting/). New America.
+58. "Instant Runoff Voting and Its Impact on Racial Minorities" (https://web.archive.org/web/20110615 181347/http://politicalreform.newamerica.net/files/irvracememo.pdf) (PDF). New America Foundation. 1 August 2008. Archived from the original (http://politicalreform.newamerica.net/files/ir vracememo.pdf) (PDF) on 15 June 2011. Retrieved 15 August 2011.
+
+59. Burnett, Craig M.; Kogan, Vladimir (March 2015). "Ballot (and voter) 'exhaustion' under Instant Runoff Voting: An examination of four ranked-choice elections". Electoral Studies. 37: 41-49. doi:10.1016/j.electstud.2014.11.006 (https://doi.org/10.1016%2Fj.electstud.2014.11.006).
+S2CID 11159132 (https://api.semanticscholar.org/CorpuslD:11159132). SSRN 2519723 (https://pa pers.ssrn.com/sol3/papers.cfm?abstract id=2519723).
+
+60. ref name="Articles 16.2.5°, 12.2.3°, and 18.5, Constitution of lreland">"Constitution of Ireland (English)" (https://www.irishstatutebook.ie/eli/cons/en/html). Office of the Attourney General. January 2020. Retrieved 19 December 2024.
+61. "Second Report: Election of a Speaker" (https://publications.parliament.uk/pa/cm200001/cmselecV cmproced/40/4005.htm). House of Commons Select Committee on Procedure. 15 February 2001. Retrieved 18 February 2008.
+62. Cary, David (1 January 2011). "Estimating the Margin of Victory for Instant-runoff Voting" (http://dl. acm.org/citation.cfm?id=2028012.2028015). Proceedings of the 2011 Conference on Electronic Voting Technology/Workshop on Trustworthy Elections. EVT/WOTE'11: 3.
+63. "BBC News -Alternative vote" (https://www.bbc.com/news/uk-politics-12910547). bbc.com. British Broadcasting Corporation. 8 February 2012. Retrieved 9 October 2019.
+64. "Opinion: OUSA Needs the Alternative Vote" (https://www.critic.eo.nz/news/article/7194/opinion-ou sa-needs-the-alternative-vote). Critic- Te Arohi. Otago, New Zealand: Otago University Students' Association. 30 September 2017. Retrieved 9 October 2019.
+65. "Liberal plan to change federal voting laws may have crossbench support" (https://www.theguardia n.com/australia-news/2020/dec/12/liberal-plan-to-change-federal-voting-laws-may-have-crossben ch-support). The Guardian. 11 December 2020. Retrieved 13 February 2021.
+66. Appendix D, Instant Runoff Voting, San Francisco Charter§ 13.102 https://sfgov.org/ccsfgsa/sites/defaulVfiles/Voting%20Systems%20Task%20Force/AppendixD	.pdf.
+
+67. Arntz, John (2 February 2005). "Ranked-Choice Voting: A Guide for Candidates" (https://web.archi ve.org/web/20081202040611/http://fairvote.org/media/irv/sanfrancisco/RCVCandidateGuide04.pd
+
+!} (PDF). Department of Elections: City and County of San Francisco. Archived from the original (h
+ttp://www.fairvote.org/media/irv/sanfrancisco/RCVCandidateGuide04.pdf) (PDF) on 2 December 2008. Retrieved 25 August 2009 - via FairVote. "In San Francisco, ranked-choice voting is sometimes called 'instant run-off voting.' The Department of Elections generally uses the term ranked-choice voting, because it describes the voting method-voters are directed to rank their first-, second- and third-choice candidates. The Department also uses the term ranked-choice voting because the word 'instant' might create an expectation that final results will be available immediately after the polls close on election night."
+68. "What is Ranked Choice Voting?" (https://web.archive.org/web/20180226101409/http://www.londo n.ca/city-hall/elections/ranked-choice-voting/Pages/What-is-Ranked-Choice-Voting.aspx). City of London. Archived from the original (http://www.london.ca/city-hall/elections/ranked-choice-voting/P ages/What-is-Ranked-Choice-Voting.aspx) on 26 February 2018.
+
+69. Kustra, Tyler; Raji, Tobi; Amenabar, Teddy; Dance, Scott; Wang, Amy B.; George, Olivia; Gathright, Jenny; Uber, Emma; Lang, Marissa (13 February 2017). "Analysis	Trudeau and allies pledged 1,813 times to reform Canada's elections. Now it won't happen" (https://www.washington post.com/news/monkey-cage/wp/2017/02/13/canadians-wanted-their-government-to-reflect-the-n ational-vote-but-these-reforms-arent-happening/). The Washington Post. ISSN 0190-8286 (https:// search.worldcat.org/issn/0190-8286). Retrieved 15 June 2025.
+70. "How RCV Works" (https://www.fairvote.org/rcv#how rev works). FairVote. 17 August 2019. Retrieved 17 August 2018.
+71. Pacuit, Eric (24 June 2019) [3 August 2011]. "Voting Methods" (https://plato.stanford.edu/archives/ fall2019/entries/voting-methods/). In Zalta, Edward N. (ed.). The Stanford Encyclopedia of Philosophy (Fall 2019 ed.) - via plato.stanford.edu.
+
+72. "Proportional Representation" (https://www.citizensinformation.ie/en/government in ireland/electi ons and referenda/voting/proportional_representation.html). Citizens Information Board. Retrieved 17 August 2019.
+73. "South Carolina General Assembly : 116th Session, 2005-2006" (http://www.scstatehouse.gov/se ss116 2005-2006/bills/3720.doc). Scstatehouse.gov. Retrieved 1 March 2015.
+
+74. "Bill Information" (http://www.arkleg.state.ar.us/assembly/2005/R/Pages/BillInformation.aspx?mea sureno=HB1770). Arkleg.state.ar.us. Retrieved 28 January 2015.
+75. Nanson, E. J. (1882). "Methods of election: Ware's Method" (https://archive.org/details/transaction sproc1719roya/page/206). Transactions and Proceedings of the Royal Society of Victoria. 17: 206. "The method was, however, mentioned by Condorcet, but only to be condemned."
+76. Condorcet, Jean-Antoine-Nicolas de Caritat (1788). "On the Constitution and the Functions of Provincial Assemblies" (https://books.google.com/books?id=d0cwAAAAYAAJ&q=Oeuvres%20d e%20Condorcet,%20Volume%2013&pg=PA243). Complete Works of Condorcet (in French).
+Vol. 13 (published 1804). p. 243. "En effet, lorsqu'il y a plus de trois concurrents, le veritable vreu de la pluralite peut etre pour un candidat qui n'ait eu aucune des voix dans le premier scrutin."
+77. Droop, H. R. (1881). "On Methods of Electing Representatives" (http://www.jstor.org/stable/23392 23 . Journal of the Statistical Society of London. 44 (2). [Royal Statistical Society, Oxford University Press]: 141-202. doi:10.2307/2339223 (https://doi.org/10.2307%2F2339223).
+ISSN 0959-5341 (https://search.worldcat.org/issn/0959-5341). JSTOR 2339223 (https://www.jstor.
+org/stable/2339223). Retrieved 1 March 2025.
+
+78. "The History of IRV" (http://archive.fairvote.org/irv/vt_lite/history.htm). FairVote archives. Retrieved 19 June 2019.
+79. "Maine became the first state in the country Tuesday to pass ranked-choice voting" (https://www.b oston.com/news/politics/2016/11/10/maine-became-the-first-state-in-the-country-to-pass-ranked-c hoice-voting/). 10 November 2016. Retrieved 10 November 2016.
+
+80. Russell, Eric (12 June 2018). "Mainers vote to keep ranked-choice voting, with supporters holding commanding lead" (https://www.pressherald.com/2018/06/12/ranked-choice-voting-takes-lead-in-e arly-balloting/). Portland Press Herald. Retrieved 13 June 2018.
+
+81. "Alaska Ballot Measure 2, Top-Four Ranked-Choice Voting and Campaign Finance Laws Initiative (2020)" (https://ballotpedia.org/Alaska Ballot Measure 2,_Top-Four Ranked-Choice Voting_and
+
+Campaign Finance Laws_lnitiative_(2020)). Ballotpedia. Retrieved 17 November 2020.
+
+82. "Ranked Choice Voting	Maine Voters Rank Candidates" (https://web.archive.org/web/201804042 01657/http://mainerankedchoice.vote/). Maine Uses Ranked Choice Voting. Archived from the original (http://mainerankedchoice.vote/) on 4 April 2018. Retrieved 8 April 2018.
+83. Robert, Henry (2011). Robert's Rules of Order Newly Revised (11th ed.). Da Capo Press.
+pp. 425-428. ISBN 978-0-306-82020-5.
+84. Sturgis, Alice (2001). The Standard Code of Parliamentary Procedure (4th ed.). p. 148 (https://arc hive.org/details/standardcodeofpa0000stur/page/148/mode/2up?q=148).
+85. Riddick, Floyd M.; Butcher, Miriam (1985). Riddick's Rules of Procedure (1985 ed.). p. 145 (http s://archive.org/details/riddicksrulesofp00ridd/page/145/mode/2up?q=145).
+86. "Presidential Election November 1990" (http://www.electionsireland.org/result.cfm?election=1990P
+&cons=194). Electionslreland.org. Retrieved 23 November 2009.
+87. "State Election 2014: Prahran District (Distribution of preference votes)" (https://web.archive.org/w eb/20180725092627/https://www.vec.vic.gov.au/Results/State2014/distributionPrahranDistrict.htm
+!). Victorian Electoral Commission. Archived from the original (https://www.vec.vic.gov.au/Results/ State2014/distributionPrahranDistrict.html) on 25 July 2018. Retrieved 25 July 2018.
+88. Bristow-Johnson, Robert (2023). "The failure of Instant Runoff to accomplish the purpose for which it was adopted: a case study from Burlington Vermont". Constitutional Political Economy. 34
+(3): 378-389. doi:10.1007/s10602-023-09393-1 (https://doi.org/10.1007%2Fs10602-023-09393-
+1 .
+
+89. Lewyn, Michael (2012). "Two Cheers for Instant Runoff Voting". Phoenix L. Rev. 6: 117.
+SSRN 2276015 (https://papers.ssrn.com/sol3/papers.cfm?abstract id=2276015). "election where Democratic candidate for mayor was Condorcet winner but finished third behind Republican and 'Progressive'"
+90. Ellenberg, Jordan (29 May 2014). How Not to Be Wrong: The Power of Mathematical Thinking (htt ps://archive.org/details/hownottobewrongp0000elle). Penguin. p. 385 (https://archive.org/details/h ownottobewrongp0000elle/page/385). ISBN 9780698163843. "a majority of voters liked the centrist candidate Montroll better than Kiss, and a majority of voters liked Montroll better than Wright ... yet Montroll was tossed in the first round."
+91. Stensholt, Eivind (7 October 2015). "What Happened in Burlington?". SSRN 2670462 (https://pap ers.ssrn.com/sol3/papers.cfm?abstract id=2670462). "K was elected even though M was a clear Condorcet winner and W was a clear Plurality winner."
+92. Dopp, Kathy (10 June 2009). "IRV much worse than old runoffs" (https://www.aspentimes.com/ne ws/irv-much-worse-than-old-runoffs/). The Aspen Times. Retrieved 17 March 2018.
+
+93. Etnier, Carl (6 March 2009). "Instant runoff was success" (https://www.rutlandherald.com/articles/i nstant-runoff-was-success/). Rutland Herald. Retrieved 17 March 2018.
+
+94. Totten, Shay. "Burlington Residents Seek Repeal of Instant Runoff Voting" (https://www.sevendays vt.com/vermont/burlington-residents-seek-repeal-of-instant-runoff-voting/Content?oid=2177125). Seven Days. Retrieved 17 March 2018. "We waited to bring in the signatures because we didn't want this to be about Kurt Wright losing after being ahead, or Andy Montroll who had more first and second place votes and didn't win. We wanted this to be about IRV."
+95. Bouricius, Terry (17 March 2009). "Response to Faulty Analysis of Burlington IRV Election" (http:// www.fairvote.org/response-to-faulty-analysis-of-burlington-irv-election). FairVote.org. Retrieved
+1 October 2017. "successfully prevented the election of the candidate who would likely have won under plurality rules, but would have lost to either of the other top finishers in a runoff'
+96. Felsenthal, Dan S.; Tideman, Nicolaus (2014). "Interacting double monotonicity failure with direction of impact under five voting methods". Mathematical Social Sciences. 67: 57-66. doi:10.1016/j.mathsocsci.2013.08.001 (https://doi.org/10.1016%2Fj.mathsocsci.2013.08.001). ISSN 0165-4896 (https://search.worldcat.org/issn/0165-4896). "A display of non-monotonicity under the Alternative Vote method was reported recently, for the March 2009 mayoral election in Burlington, Vermont."
+97. Ornstein, Joseph T.; Norman, Robert Z. (1 October 2014). "Frequency of monotonicity failure under Instant Runoff Voting: estimates based on a spatial model of elections". Public Choice. 161 (1-2): 1-9. doi:10.1007/s11127-013-0118-2 (https://doi.org/10.1007%2Fs11127-013-0118-2).
+ISSN 0048-5829 (https://search.worldcat.org/issn/0048-5829). S2CID 30833409 (https://api.sema nticscholar.org/CorpuslD:30833409). "Although the Democrat was the Condorcet winner (a majority of voters preferred him in all two way contests), he received the fewest first-place votes and so was eliminated ... 2009 mayoral election in Burlington, VT, which illustrates the key features of an upward monotonicity failure"
+98. "Initiatives - Pew Center on the States" (https://web.archive.org/web/20080516235221/http://www. electionline.org/Portals/1/Publications/SC.EAP.2006primary.pdf) (PDF). Electionline.org. Archived from the original (http://www.electionline.org/Portals/1/Publications/SC.EAP.2006primary.pdf) (PDF) on 16 May 2008. Retrieved 6 May 2010.
+99. /RV for Louisiana's Overseas Voters (http://archive.fairvote.org/?page=1669) (web page), FairVote IRV America, retrieved 16 June 2013
+100. "Voting system" (https://www.ecq.qld.gov.au/how-to-vote/voting-systems). www.ecq.qld.gov.au.
+Electoral Commission of Queensland. 28 January 2020. Retrieved 17 November 2020.
+101. Stevens, Bronwyn (27 January 2015). "Are Queenslanders in danger of 'wasting' their votes?" (htt ps://theconversation.com/are-queenslanders-in-danger-of-wasting-their-votes-35919). The Conversation. Retrieved 28 November 2020.
+
+102. "Electoral Systems" (https://web.archive.org/web/20080309220219/http://www.eca.gov.au/system s/single/by_category/preferential.htm). Electoral Council of Australia. Archived from the original (ht tp://www.eca.gov.au/systems/single/by_category/preferential.htm) on 9 March 2008. Retrieved
+15 February 2008.
+103. "Ranked-Choice Voting" (http://www.acgov.org/rov/rcv/faq.htm). Registrar of Voters, Alameda County. Retrieved 15 December 2016. "This format allows a voter to select a first-choice candidate in the first column, a second-choice candidate in the second column, and a third-choice candidate in the third column."
+104. Breyer, Patrick (November 2013). "Alternative II: Einfuhrung einer Ersatzstimme" (https://www.lan dtag.ltsh.de/infothek/wahl18/umdrucke/1900/umdruck-18-1916.pdf) (PDF). Anhorung zum Entwurf eines Gesetzes zur Abschaffung der Funf-Prozent-Sperrklausel bei Landtagswahlen in Schleswig­ Holstein [Hearing on the draft law to abolish the five percent threshold in state elections in Schleswig-Holstein (Discussion paper)] (Report) (in German). Piratenfraktion im Schleswig­ Holsteinischen Landtag. (Ors. 18/385).
+
+External links
+
+¦ "Explainer: Instant runoff voting" (https://electionlab.mit.edu/research/instant-runoff-voting#) by MIT Election Science Lab
+
+Retrieved from "https://en.wikipedia.org/w/index.php?title=lnstant-runoff voting&oldid=1359683580"
+

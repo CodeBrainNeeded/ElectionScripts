@@ -1,0 +1,255 @@
+Condorcet Voting*
+
+Edward B. Foley, Ohio State University Eric S. Maskin, Harvard University
+March 2025
+
+Promise of the Reform
+
+Condorcet voting is superior to three standard voting methods - plurality rule, runoff voting, and ranked-choice voting - according to three attractive democratic tenets: the majority will principle (the idea that the choice of a majority of people should prevail), the compromise principle (the view that finding a happy medium in politics is better than either of two warring extremes), and independence of irreverent alternatives (the principle that if the serious choice in an election is between candidates A and B, how voters feel about some third candidate C should not matter).
+Key Takeaways
+
+* Condorcet voting compares the preferences of voters for each pair of candidates and elects the candidate (when there is one) whom a majority of voters prefer to each opponent.
+* Because a Condorcet winner may not exist, an additional rule (a Condorcet-completion rule) is required to determine the election's winner in such cases.
+* However, empirical evidence indicates that the Condorcet-completion rule would rarely be invoked, as virtually all real-world elections have a Condorcet winner.
+* Available evidence in partisan elections indicates that voters' preferences largely line up on a left-right political spectrum.
+* Because Condorcet voting elects the candidate preferred by an electorate's median voter-the voter in the exact middle of the electorate-Condorcet voting counteracts
+
+political polarization (which, under the current system, produces electoral results towards one pole or the other of the political spectrum).
+* Strategic voting, which could interfere with electing the candidate preferred by the median voter, can be thwarted by a carefully designed Condorcet-completion rule.
+Important Questions the Research Does Not Answer
+
+* How serious in practice is the threat of strategic voting?
+
+* If Condorcet voting were adopted, would electoral preferences change so that the left- right lineup no longer held?
+* If voters were educated about Condorcet voting, and the democratic principles it embodies, would they embrace it?
+* To what extent does the Condorcet-completion rule matter for public acceptance of Condorcet voting?
+* Would voters prefer a Condorcet voting system that uses a ranked ballot or instead has a voter simply choose her favorite from each pair of candidates?
+1. Introduction
+
+      Condorcet voting is a voting method for single-winner elections (as for US senator) named for the Marquis de Condorcet (1985), the eighteenth-century French mathematician and political philosopher who studied it. It elects the candidate preferred by a majority of voters to each rival in pairwise comparisons. The candidate elected is called the Condorcet winner (we discuss the possibility that a Condorcet winner might not exist in Section 2). We will show in this primer that, in several respects, Condorcet voting does a better job of reflecting voters' preferences in political elections than do the most common voting methods in current practice.
+
+      To begin with, consider the hypothetical election in Scenario 1 with three candidates: Red, Purple, and Blue. The Condorcet winner in this scenario is Purple: 55% (voters in the
+45% of voters25% of voters30% of voters1st choiceRedPurpleBlue2nd choicePurpleRedPurple3rd choiceBlueBlueRedScenario 1
+
+second and third groups) prefer Purple to Red, and 70% (voters in the first and second groups) prefer Purple to Blue. But elections in the United States currently don't use Condorcet voting; they generally employ plurality rule (sometimes called "first past the post"). In a plurality rule election, each citizen votes for a single candidate, and the candidate with the most votes wins (even if short of a majority). Assuming that every voter opts for her first-choice candidate (we discuss misrepresentation of preferences in Section 4), Red wins in Scenario 1 (because 45% exceeds 30% and 25%).
+      Yet, according to several criteria, Purple is better than Red at representing what the voters in this scenario really want.
+      First, as we noted, a strong majority of voters - 55% - prefer Purple to Red. Thus, on the principle that, in a democratic election, the will of the majority should prevail (call this the majority will principle), Purple is better than Red. The majority will principle is deeply rooted in America's political culture. As Jefferson (1798) wrote, "We are sensible of the duty and expediency of submitting our opinions to the will of the majority, and can wait with patience till they get right if they happen to be at any time wrong." And so, Condorcet voting is superior to plurality rule in Scenario 1 according to this principle.
+
+      This hypothetical election is an example of the conventional wisdom that political candidates are arrayed along a spectrum from left to right. In Scenario 1, Blue and Red represent the two extremes. Purple bridges the divide between them by securing enough support from Blue's supporters to form a majority coalition against Red and sufficient support from Red's supporters for a majority against Blue. Thus, on the principle of compromise, Condorcet voting is also better than plurality rule in Scenario 1.
+      Observe that Red beats Purple in a plurality rule election in Scenario 1 only because Purple and Blue split the anti-Red vote. If, for some reason, Blue were not on the ballot (or, equivalently, were at the bottom of everyone's ranking), Purple would easily beat Red, and so - as we will see - should arguably also beat him in Scenario 1. To understand this claim, consider Scenario 2. In going from Scenario 1 to Scenario 2, observe that the only change lies with the
+45%25%30%RedPurplePurplePurpleRedRedBlueBlueBlueScenario 2
+
+third group of voters. In Scenario 1, they have the ranking Blue ? Purple ? Red, but in Scenario 2, they've been replaced by voters with ranking Purple ? Red ? Blue. That is, Blue is ranked last by everyone in Scenario 2, and it is obvious that any reasonable voting system should elect Purple: she's ranked first by 55% of voters and second by the remaining 45% (the numbers are reversed for Red). Yet, if Purple wins in Scenario 2, then, logic suggests that she should win in Scenario 1 too: (i) Red shouldn't be the winner because the rankings of Purple and Red are exactly the same in both scenarios - so if Purple wins in the second, Red shouldn't win in the first; and (ii) Blue shouldn't win in Scenario 1 because only 30% rank him first and no one ranks
+
+second (compared with 45% first-place votes for Red and 25% second-place votes). But if neither Red nor Blue wins, that leaves Purple as the appropriate winner in Scenario 1.
+      This last argument turns on Arrow's (1951) principle of independence of irrelevant alternatives (or candidates) (IIA): the idea that the outcome of an election in which Red and Purple are the serious candidates should depend only on voters' rankings of Red and Purple and not on how voters' rank some other candidate like Blue (who shouldn't win in any case).Thus according to IIA, Condorcet voting is superior to plurality rule in Scenario 1.
+      We have been concentrating so far on plurality rule, but runoff voting1 and ranked-choice voting2 (RCV) are also fairly common methods in the U.S. and other countries. The first round of a runoff voting election is the same as in plurality rule except that a candidate wins outright only if she has a majority of votes. If there is no such candidate, the two highest vote-getters face each other in a runoff, and the majority winner there is elected. Again, provided that voters don't act strategically, no candidate gets a majority in the first round of Scenario 1, and so Red and Blue go to the runoff (since 45% and 30% are the two biggest totals). Red then prevails because 70% of voters (the first and second groups) vote for Red compared to Blue's 30%.
+      In RCV, voters rank the candidates in order of preference from best to worst. If some candidate is ranked first by a majority, she is elected immediately. Otherwise, the candidate ranked first by fewest voters is dropped, her supporters' second choices are moved into first, and the process repeats until some candidate obtains a majority of the first-place choices. In a three- candidate race, RCV results in the same outcome as in runoff voting (since, in that case, just one
+
+
+
+1 Runoff elections are used in France, Brazil, and Russai, and many other countries. Three U.S. states - Georgia, Mississippi, and Louisiana - use them in general elections.
+2 Ranked-choice voting (RCV) is used in Maine, Alaska, and many U.S. cities. Abroad it is used in Australia (where it is called preferential voting) and in elections for Lord Mayor of London (where it is called alternative voting), among other places. It also goes under the name instant runoff voting.
+
+candidate is dropped in runoff voting in going from the first round to the runoff, exactly as with RCV). So, again the winner in Scenario 1 is Red.
+      We have seen that according to the principles of majority will, compromise, and IIA, Condorcet voting is superior to plurality rule, runoff voting, and RCV in Scenario 1. But what about in other scenarios? And what about the comparison with still other voting rules?
+      In fact, Condorcet voting satisfies the majority will principle in any scenario from its very definition: if the Condorcet winner x is elected, then the will of majority has prevailed in the sense that x is preferred by a majority to any other candidate. However, if a voting rule is not Condorcet voting, then there must be a scenario in which that rule does not elect the Condorcet winner, implying that, in that circumstance, the will of the majority is thwarted. Thus, only Condorcet voting satisfies the majority will principle all the time. Similarly, it can be shown that, among reasonable voting rules, only Condorcet voting and the Borda count satisfy IIA3 and the compromise principle all the time.
+      In the Borda count, an electoral method proposed by Condorcet's archrival, Jean-Charles Borda (1781), voters rank the candidates and, in the case of three candidates, a candidate gets 3 points for each voter who ranks her first, 2 points for each second ranking, and one for a third ranking. The winner is the candidate with the biggest point total, i.e., the biggest Borda score. In Scenario 1, Red has Borda score 3? 45 ? 2 ? 25 ?1? 30 ? 215 ; Purple has Borda score
+3? 25 ? 2 ? 75 ? 225 ; and Blue has Borda score 30 ? 3 ? 70 ?1 ? 160 . Thus, Purple is the Borda winner in this scenario.
+
+
+
+
+
+
+3 Borda voting does not satisfy full-blown Arrow IIA, but satisfies a weaker version that is arguably more justifiable. See Saari (2019) and Maskin (2025).
+
+      Although the Borda count like Condorcet voting is attractive for multiple reasons4, it is inferior to Condorcet voting in at least one important respect: it is vulnerable to strategic voting. Specifically, supporters of a particular candidate may gain by strategically downgrading their candidate's closest rival (see Section 4). By contrast, we will show in Section 4 that there is a way of conducting Condorcet voting resistant to strategic voting.
+      In Section 2, we will review how the voting literature, both theoretical and empirical, has dealt with the possibility that there is no Condorcet winner. In Section 3, we turn to the sense in which Condorcet voting leads to good compromise outcomes and how this fact can help fight political polarization. In Section 4, we discuss strategic manipulation.
+2. Condorcet Cycles, Condorcet Completion, and Single-Peaked Preferences
+
+A. Condorcet-Completion Methods
+
+      Condorcet voting has at least one serious potential flaw. As Condorcet (1785) himself showed, a Condorcet winner need not always exist. Consider Scenario 3, in which there are three candidates - x, y, z - and three groups of voters. Notice that a majority of voters (66%) prefer x to y; a majority (69%) prefer y to z, and yet a majority (65%) prefer z to x.
+35% of voters34% of voters31% of votersxyzyzxzxyScenario 3: A Condorcet cycle
+
+      This cycle of pairwise majorities, called a Condorcet cycle, implies that there is no candidate who beats the other two, i.e., Condorcet voting does not produce a clear winner.
+
+
+4 There are at least two ways in which Borda voting can be considered superior to Condorcet voting: (1) a Borda winner always exists (unlike a Condorcet winner) and (2) by awarding more points for higher-ranked candidates, Borda voting takes account of voters' intensity of preference, unlike Condorcet.
+
+Motivated by such a possibility - called the Condorcet Paradox - a large literature has centered on Condorcet-completion voting methods, which elect the Condorcet winner if there is one and someone else if not.
+      Some prominent Condorcet-completion methods include the minimax method5, Black's method6, and Baldwin's method7. Numerous other Condorcet-completion methods are discussed in the literature8. In Section 4 we discuss a Condorcet-completion method that is resistant to strategic voting.
+      For Condorcet voting to be adopted as an election method, some Condorcet-completion method must be selected in case of a Condorcet cycle. In our view, however, the choice of the particular completion method isn't particularly crucial (except perhaps to deal with the issue of strategic voting, as in Section 4) because, as we discuss in subsection 2C, Condorcet winners exist nearly always in practice.
+B. Single-Peakedness
+
+      The literature on Condorcet-completion methods is predicated on the concern that a Condorcet winner may not exist. But Black (1948) showed that when voters' preferences are single-peaked, then a Condorcet winner always exists.
+      To explain Black's idea, let's imagine that the candidates for election are arrayed on a line, ranging from left to right, as in our initial example of Blue, Purple, and Red. A voter's
+
+5 In the minimax method, the winner is the candidate whose worst pairwise defeat is smallest. In Scenario 3, x loses to z 65% to 35%, y loses to x 66% to 34%, and z loses to y 69% to 31%. So, x is elected.
+6 Black's method elects the Borda winner, if there is no Condorcet winner. In Scenario 3, x gets 35 ? 3 ? 31? 2 ? 34 ?1 ? 201 Borda points, y gets 34 ? 3 ? 35 ? 2 ? 31?1 ? 203 points, and z gets 31? 3 ? 34 ? 2 ? 35 ?1 ? 196 points. So, y is elected.
+7 In this method, if there is no Condorcet winner, the candidate with the lowest Borda score is dropped, and the process iterates until a Condorcet winner emerges among the remaining winner (Foley and Maskin 2022 call this total vote runoff voting). In Scenario 3, candidate z has the lowest Borda score and so is dropped. Candidate x is then elected (as the Condorcet winner between x and y).
+8 Including Copeland's method, the ranked-pairs method, the Kemeny-Young method, Nanson's method, and Schulze's method (Tideman 2006)
+
+preferences are single-peaked if, whenever some candidate y is to the right of her favorite candidate, then the voter prefers y to any candidate still further to the right, and, analogously, if y is to the left of her favorite, she prefers y to any candidate further to the left9.
+      Let's suppose that voters' preferences are single-peaked in this sense. The median voter is the voter whose favorite candidate x is such that the favorite candidates of more than half the voters are at or to the right of x, and the favorites of more than half are at or to the left of x. Now, pick some candidate y to the right of x. Because preferences are single-peaked, all voters with favorites at or to the left of x prefer x to y. But these voters constitute more than half the electorate, and so, x defeats y head-to-head by a majority. Similarly, x defeats any candidate to her left by a majority. We have established:
+
+
+ Black's Median Voter Theorem: When voters' preferences over candidates are single-peaked, a Condorcet winner exists and coincides with the median voter's favorite candidate.10
+
+C. Empirical Evidence
+
+      The Condorcet-completion literature is built on the possibility that there may not be a Condorcet winner, so that another candidate must be elected. But most evidence available shows that, in actual elections, a Condorcet winner almost always exists, especially in a highly partisan contest like a state or federal election.
+
+
+9 The term "single-peaked" derives from the fact that if we plotted a voter's satisfaction (utility) from each candidate, on the vertical axis and arrayed the candidates from left to right on the horizontal axis, the graph would peak at the voter's favorite candidate and decline both to the right and left of that peak.
+10 Black's median voter theorem, a central finding of social choice theory, should not be confused with the (related) political science prediction made famous by Downs (1957) that in elections governed by plurality rule candidates will tend to converge upon the preferences of the median voter. This tendency has weakened as partisan polarization has increased. For an explanation of why, including the argument that Condorcet voting is necessary to elect candidates closer to the median voter, see Atkinson (2024).
+
+      Calculating the Condorcet winner requires knowing how voters rank the candidates, and, until fairly recently, those rankings were available primarily for elections in professional societies and trade unions. Thus, for example, Tideman (2006) reports that in 87 elections for leadership of various British organizations (mainly trade unions), a Condorcet winner existed in every instance. And Popov, Popova, and Regenwetter (2014) show that the same was true of twelve elections for president of the American Psychological Association.
+      However, in the U.S., we now have the ranking data for most RCV political elections since 2002. Graham-Squire and McCune (2023) examine the 185 RCV elections between 2002 and 2022 in which no candidate got a majority of the first-place vote11. In all but two of these elections, a Condorcet winner existed12. Furthermore, Stephanopoulos (2024) reports that in the 155 state and local elections between 2015 and 2023 in New South Wales, Australia for which no candidate got a majority of the first-place vote, a Condorcet winner existed in all but one instance13 (and that, again, was a local election - a mayor's race).
+      An important caveat to all these studies is that none of the elections they report on were conducted using Condorcet voting. This would not be a concern if the typical voter ranks candidates according to her sincere preferences (since then she would rank them the same way regardless of the voting system). But it could be misleading if significant numbers of voters voted strategically14. Another - perhaps more serious - caveat is that the voting system itself can affect which candidates choose to run for office. We return to this issue in Section 3.
+
+
+11 If a candidate did get a majority of the first-place vote, she would simultaneously be the plurality-rule, RCV, and Condorcet winner. So such an election could not serve to distinguish the voting methods we are discussing.
+12 The exceptions were a city council election in Minneapolis and a school director election in Oakland, CA. But local elections like these tend not to be highly partisan. So, they are not good counterexamples to the proposition that in elections where partisanship plays a significant role, Condorcet winners will exist.
+13 That, again, was a local election - a mayor's race.
+14 Although we have no evidence to suspect that there was widespread strategic voting in the RCV races conducted since 2002, this is not an issue that has been closely examined empirically.
+
+      It would be too much to expect real-life ballots to adhere strictly to single-peakedness; there will always be some idiosyncratic voters. Nevertheless, in all of the 100 RCV state and federal elections in Maine and Alaska for which there were three or more candidates, single- peakedness was a sufficiently good approximation so that a Condorcet winner exists and the Condorcet-completion method we discuss in Section 4 is strategy-resistant (see Maskin and Robinette 2025). A typical example is exhibited in Scenario 4, the results from the special election in August 2022 for Alaska's (sole) U.S. House seat. The three candidates were Sarah Palin (Trumpist Republican),
+18%11%2%14%6%8%25.5%13%2.5%PalinPalinPalinBegichBegichBegichPeltolaPeltolaPeltolaBegichPeltolaPalinPeltolaBegichPalinPeltolaBegichPeltolaPalinPalinBegichScenario 4
+
+Nick Begich (less extreme Republican), and Mary Peltola (Democrat).
+
+      It is easy to verify that Begich is the Condorcet winner (although in the actual election, RCV was used and elected Peltola). Based on the ideological or partisan ordering of the candidates, we would not expect Palin supporters to rank Peltola above Begich, nor Peltola supporters to rank Palin above Begich. And, indeed, these violations amount to only 2% and 2.5% of the ballots cast, respectively. Notice that a substantial number of voters declined to rank any but their first-choice candidates. In section 4, we observe that incomplete rankings and the small fraction of non-single-peaked rankings observed in practice are consistent with resistance to strategic voting.
+3. Counteracting Polarization
+
+      The United States has experienced growing political polarization over the last half- century. In particular, the Democratic and the Republican parties have been moving further away from one another to the point where intense loyalty to one's own party and intense animosity toward the opposing party is increasingly prevalent and overrides other considerations. Political scientists have discussed whether increased polarization is "ideological" or "affective" (meaning characterized by emotional affiliation with one's party), but the distinction doesn't matter for our analysis (see Foley 2024).
+      In such circumstances, we might hope that candidates from the political center would jump into the fray - after all, from Black's Theorem they should be able to beat more extreme candidates (both Democratic and Republican) one-on-one.
+      Unfortunately, however, such candidates cannot get elected under the predominant American voting system, plurality rule, nor even under runoff voting or RCV. This is because, as data from the Cooperative Election Study attest, the electorates of many states have become significantly polarized along partisan lines.15 So, most Republican voters are likely to prefer the Republican nominee, who these days often comes from the MAGA wing of the party, to a more moderate Republican. Similarly, Democratic voters prefer the Democratic nominee to the moderate Republican.
+      This means that in a three-way plurality-rule race, the moderate Republican would attract only the (relatively sparse) votes of the non-MAGA Republican voters plus centrist unaffiliated
+
+
+15 The electorate profiles for each state in Foley (2024), derived from the Cooperative Election Study, show the degree of polarization to vary from state to state, with some especially polarized including the battleground states of Arizona, Nevada, and Pennsylvania, with the overall national trend of much greater polarization among voters recently than in previous decades. This partisan polarization may be associated with other developments, like the increased geographic sorting of citizens along partisan lines, but whatever the cause the fact that there are fewer voters "between the 40 yard lines" and more voters closer to the endzones affects the ability of the existing electoral system to elect candidates close to the state's median voter. For a different analysis of national data on the extent to which "moderate" voters remain in the American electorate, see Fowler (2022).
+
+voters - not enough to win. Our guess about voters' rankings in the 2022 U.S. Senate race in Ohio - Scenario 5 - illustrates this phenomenon16.
+38%7%9%46%RyanPortmanPortmanVancePortmanRyanVancePortmanVanceVanceRyanRyanScenario 5
+In that election, the long-time incumbent - traditional Republican Rob Portman - retired rather than run in the Republican primary, where he would probably have lost to a Trump-backed candidate (who turned out to be JD Vance). Portman might have tried running as an independent in the general election. But, as the numbers in Scenario 5 show, he would have finished a distant third (16%) under plurality rule to Vance (46%) and Democrat Tim Ryan (38%).
+      Nor would Portman have fared any better under runoff voting or RCV. In both cases, he would have been dropped as a candidate in the first round, leaving the contest to Ryan and Vance (which Vance would have won 55% to 45%).17
+      By contrast, under Condorcet voting Portman beats Vance 54% to 46% and beats Ryan 60% to 40% and so is elected. This should not be surprising: the Condorcet winner corresponds to the median voter's preferred candidate, and such a voter is likely to prefer compromises like Portman to more polarizing candidates like Vance and Ryan. American voters are so fixated on
+
+
+
+16 This scenario is adapted from Foley and Maskin (2024). Another example of the same phenomenon is Arizona's 2024 US Senate election, where incumbent Democrat-later-independent Krysten Sinema did not run for reelection after being challenged in the Democratic primary by the more progressive then-Representative (and now-Senator) Ruben Gallego. The MAGA extremist election denialist Kari Lake was the Republican nominee in the general election.
+17 Stephanopoulos (2024) presents data for hundreds of RCV elections showing that had these elections been run according to Condorcet, the outcomes would have almost all been the same. However, this survey neglects the many races, such as Portman's in 2022, Joe Manchin's in 2024, and Kyrsten Sinema's in 2024, in which centrists declined to run knowing that they were likely to be defeated. In such races, we would expect centrists to fare much better under Condorcet voting, and so predict that many would end up running.
+
+their first choices (perhaps because of their long experience with plurality rule, in which they express only their first-choice preferences) that, in Foley and Maskin 2024, we propose an election system consisting of an open (non-partisan) primary from which the three top candidates go to the general election run according to Condorcet voting. But rather than having each voter rank the candidates (e.g., Ryan > Portman > Vance), a voter would receive a ballot that enables them simply to express their preference between each pair of candidates: Ryan versus Portman, Ryan versus Vance, and Portman versus Vance. In other words, this form of ballot enables the voters to cast their head-to-head votes directly, rather than inferring the head-to-head comparisons from a ranked-choice ballot. This kind of direct Condorcet ballot would be a way to break the obsession with first choices (which wouldn't even be expressed by voters).It also would have the great advantage of making the reporting of election results, on election night as the returns come in as well as afterwards, much more straightforward and transparent to voters: one can instantly see the count of the three head-to-heads and thus know the identity of the Condorcet winner, rather than needing to follow the somewhat complicated calculation of the head-to-heads from a set of rankings.
+4. Strategic Voting
+
+      Borda voting (like Condorcet voting) promotes compromise and satisfies (a relaxed version of) IIA. However, as already noted in the Introduction, it is vulnerable to strategic voting. Consider, for example, Scenario 4 involving Palin, Begich, and Peltola. Begich is the Borda winner when voters submit the rankings of this scenario18. Suppose, however, that 12% out of
+
+
+
+18 When a voter ranks only a single candidate in a three-candidate election, the other two candidates share the three Borda points for second and third place, i.e., they each get 1.5 points. Thus, Begich's point total is
+28 ? 3 ? 43.5 ? 2 ? 24 ?1.5 ? 4.5 ?1 ? 211.5 , higher than Peltola's ?41? 3 ? 10 ? 2 ? 17 ?1.5 ? 32 ?1 ? 200.5? or
+Palin's ?31? 3 ? 16.5 ? 2 ? 19 ?1.5 ? 4.5 ?1 ? 188? .
+
+the 25.5% of voters with true ranking Peltola ? Begich ? Palin submit ranking
+
+Peltola ? Palin ? Begich instead (joining the 2.5% who were already doing so); see Scenario 6. Then Begich's Borda score falls to 199.5 (and Palin's rises to 200), so that Peltola now becomes the Borda winner thanks to her supporters' manipulations. In fact, Peltola also wins in Scenario 6
+according to the Condorcet-completion system Black's method19.
+
+
+
+
+
+
+18%11%2%14%6%8%13.5%13%14.5%PalinPalinPalinBegichBegichBegichPeltolaPeltolaPeltolaBegichPeltolaPalinPeltolaBegichPalinPeltolaBegichPeltolaPalinPalinBegichScenario 6
+
+      For that matter, plurality rule, runoff voting, and RCV are also manipulable. Notice that in Scenario 4, Peltola is the winner according to all three methods (as we noted, she was elected under RCV in the actual election). But if 3% out of the 18% of voters with ranking
+Palin ? Begich ? Peltola rank Begich first instead, then he becomes the winner, a better outcome
+
+for these voters.
+
+      By contrast, as Maskin and Robinette (2025) show, there exists a (unique) Condorcet completion method that is resistant to manipulation when voters' preferences are sufficiently close to being single-peaked, as the empirical evidence mentioned previously suggests has been the case in Maine and Alaska elections. Here's how it works.
+
+
+19 Notice that because of the manipulation, there is no Condorcet winner in Scenario 6 (Palin beats Begich, Begich beats Peltola, and Peltola beats Palin), and so Peltola - as the Borda winner - is elected. Thus, Black's method, like Borda voting, is vulnerable to strategic manipulation.
+
+      Let us define a candidate's diversity score (a measure of the breadth of her support) for a given scenario to be the number of different rankings in which she is ranked first (counting only those rankings submitted by at least 5% of voters20). Thus, in Scenario 4, Palin's diversity score is 2: 18% of voters rank her first and place Begich second and 11% rank her first and express no preference between Begich and Peltola (2% rank her first and put Peltola second, but this percentage falls below the cutoff). Similarly, Peltola's diversity score is 2. Begich, however, has a diversity score of 3: 14% have ranking Begich ? Palin ? Peltola , 6% rank Begich first with no
+preference between Palin and Peltola, and 8% have ranking Begich ? Peltola ? Palin . This illustrates the general principle that, when preferences are (nearly) single-peaked, we expect candidates toward the middle of the partisan distribution (Begich, in this case) to have higher
+diversity scores than candidates toward the extremes. A voter who likes the moderate candidate
+
+best might rank either of the two extremes second. But a voter whose favorite is the leftwing extremist is not likely to rank the rightwing extremist second.
+      Now, consider the following voting system: (1) voters rank the candidates; (2) if there is a Condorcet winner, she is elected; (3) if there is no Condorcet winner, the candidate with the lowest diversity score is dropped (if there are multiple such candidates, the one with the fewest first-place votes is dropped); (4) the process iterates until a Condorcet winner among the remaining candidate emerges.
+      To see how this works in Scenario 4, observe that if voters submit their rankings sincerely, then Begich is the Condorcet winner. If enough of Peltola's supporters instead submit the false ranking Peltola ? Palin ? Begich, they can elevate Peltola's diversity score to 3 and may succeed in creating a Condorcet cycle (as in Scenario 6), thereby preventing Begich from being
+
+20 The 5% cutoff is chosen empirically on the basis of the data from Alaska and Maine.
+
+the Condorcet winner. In that case, however, Palin (with a diversity score of only 2) will be dropped as a candidate, and then Begich will defeat Peltola (46% to 43%) in the instant runoff that follows. Thus, the manipulation will not pay off21 (moreover, by elevating Palin, Peltola's supporters run the risk of electing her instead of Begich). In other words, the voting system is resistant to strategy.
+Conclusion
+
+      Condorcet voting is the electoral method embodying the will of the majority as it elects the candidate whom a majority of voters prefer to each other candidate. This congruence with the majority will principle has made Condorcet voting a theoretically attractive way for a people to achieve democratic self-government ever since Condorcet expounded the concept in the late eighteenth century. Indeed, late in life James Madison-the principal father of the U.S. Constitution and America's ensuing Madisonian system of government-expressed his understanding that Condorcet voting is necessary to elect the candidate who is, in Madison's words, "the real preference of the Voters." (Foley 2025)
+      Condorcet voting, however, has rarely been used in political elections, in part because the computing technology necessary to implement it on a large scale as a practical matter was not invented until the late twentieth century (the method requires comparing every pair of voters, a computationally demanding task). Now, however, the practical impediments to adopting Condorcet voting for political elections have been overcome, and states are in a position to exercise their role as "laboratories of democracy" within America's federalist system of government by trying out various forms of Condorcet voting, including those that use ranked-
+
+
+21 The decision by a state about whether to adopt this strategy-resistant version of Condorcet voting (instead of a simpler Condorcet system) would presumably depend on how worried the state is about factors, such as how closely the electorate's preferences adhere to weak single-peakedness.
+
+choice ballots and those in which voters make pairwise comparisons of candidates directly. Alternative Condorcet completion methods can be tested in practice to see how they fare in resisting strategic voting, encouraging independent candidates to run, and attracting public support.
+      States should be encouraged to begin experimenting with various forms of Condorcet voting if for no other reason, then to combat the crisis of polarization afflicting American politics. The core attribute of all Condorcet voting systems-electing the candidate closest to the electorate's median voter-makes Condorcet voting a powerful electoral method for overcoming the deepening red-blue divide in the United States. Given the challenges confronting America's Madisonian democracy, it is time for Americans to recognize what Madison himself foresaw late in life: electing candidates who are "the real preference of the Voters" enables the system to sustain itself into the future.
+
+
+References
+
+Atkinson, N., and Ganz, S. 2024. "Robust Electoral Competition: Rethinking Electoral Systems to Encourage Representative Outcomes." Maryland Law Review 84(1): 102-142.
+Arrow, K. J. 1951. Social Choice and Individual Values. New York: Wiley.
+
+Black, D. 1948. "On the Rationale of Group Decision-Making." The Journal of Political Economy 56 (1): 23-34.
+
+Borda, J-C. 1781. "Mémoire sur les élections au scrutin." Mémoires de l'Academie Royale des Sciences, 657-665.
+
+Condorcet, J.-A.-N. de C.1785. Essai sur l'application de l'analyse à la pluralité des voix. Imprimerie Royale.
+
+Dasgupta, P., and Maskin, E. 2008. "On The Robustness of Majority Rule." Journal of the European Economic Association 6 (5): 949-73.
+
+Downs, Anthony. An Economic Theory of Democracy. New York: Harper.
+
+Foley, E.B. 2024. "Ballot Structures," in Electoral Reform in the United States: Proposals for Combating Polarization and Extremism (Larry Diamond, E.B. Foley, and Richard H. Pildes, editors). Boulder, CO: Lynne Reiner Publishers.
+
+Foley, E.B. 2025. "'The Real Preference of the Voters': Madison's Idea of a Top-Three Election and The Present Necessity of Reform" Wisconsin Law Review (forthcoming). Available at SSRN: https://ssrn.com/abstract=5097563 or http://dx.doi.org/10.2139/ssrn.5097563
+
+Foley, E. B., & Maskin, E. S. 2022. "Alaska's Ranked-Choice Voting Is Flawed. But There's an Easy Fix." The Washington Post (Online), 2022.
+
+Foley, E. B., & Maskin, E. S. 2024. "How to Depolarize American Politics." Project Syndicate, February 8, 2024.
+
+Fowler, A. et al. 2023. "Moderates." American Political Science Review 117(2): 643-660.
+
+Graham-Squire, A., & McCune, D. 2023. "An Examination of Ranked Choice Voting in the United States, 2004-2022." arXiv (Cornell University).
+
+Inada, K.-I. 1969. "The Simple Majority Decision Rule." Econometrica 37 (3): 490-506. Jefferson, T. 1798. Draft of The Kentucky Resolutions.
+Maskin, E. 2025. "Borda's Rule and Arrow's Independence Condition." Journal of Political
+Economy, 133(2): 385-420
+
+Maskin, E. S., & Robinette, R. 2024. "Election Methods and Strategic Voting." Working paper.
+
+Maskin, E. S., & Sen, A. 2016. "How Majority Rule Might Have Stopped Donald Trump." New York Times (Online), 2016.
+
+May, K. O. 1952. "A Set of Independent Necessary and Sufficient Conditions for Simple Majority Decision." Econometrica 20 (4): 680-84.
+
+McClean, Iain 2015. "The Strange History of Social Choice," in Handbook of Social Choice and Voting (Jac C. Heckelman and Nicholas R. Miller, editors). Northhampton, MA: Elgar Publishing.
+
+Popov, S. V., Popova, A., & Regenwetter, M. 2014. "Consensus in Organizations: Hunting for the Social Choice Conundrum in APA Elections." Decision (Washington, D.C.) 1 (2): 123-46.
+
+Robbins, L. 1932. "An Essay on the Nature and Significance of Economic Science." In
+Macmillan Company, 1932. 141 Pp.
+
+Saari, D. 2019, "Arrow and Unexpected Consequences of His Theorem." Public Choice,179(1/2), 133-44.
+
+Sen A. K. 1966. "A Possibility Theorem on Majority Decisions." Econometrica 34: 491-99. Stephanopoulos, N. 2024. "Finding Condorcet." Washington and Lee Law Review, Forthcoming.
+Tideman, N. 1987. "Independence of Clones as a Criterion for Voting Rules." Social Choice and Welfare, 4 (3): 185-206.
+
+Tideman, N. 2006. Collective Decisions and Voting : The Potential for Public Choice. Aldershot,
+England ; Burlington, VT: Ashgate.
+
+Tideman, N. 2023. "Choosing among the Variety of proposed Voting Reforms." Const Polit Econ 34: 471-481.
+
+
